@@ -1,0 +1,27 @@
+{
+  "version": "5.3.0",
+  "publishedAt": "2026-10-02T18:42:15.105Z",
+  "notes": "### ✨ 新功能\n\n- 红心与网易云「我喜欢的音乐」双向同步：启动/登录即拉取云端红心并以云端为准；未登录期间的红心改动在登录后补传；首次同步时可选择是否补传本机多出的红心\n- 移动端设置新增「卡片透明度」滑块（默认 40%，与原观感一致）\n- 关于页「支持作者」接入微信二维码\n- Android 桌面歌词改为网易云样式：通栏半透明面板、双行歌词（译文/下一句）、锁定后只留歌词且触摸穿透，支持 5 种主题色与字号调节\n- 系统媒体卡片/通知新增「喜欢」与「词」按钮：一键红心（同步网易云）、开关或解锁桌面歌词\n- 应用内更新（Windows / Android）：从发布页获取新版本，安装包按 SHA-256 校验后安装；GitHub 不可达时自动改走镜像\n\n### 🎨 优化\n\n- 歌单长列表滚动：已渲染的行不再随滚动整体重渲染、改为逐帧补齐，深度滚动的主线程阻塞降低约 65 倍\n- 进入歌单更快：首屏只渲染一屏、其余空闲时分帧补齐；去掉列表逐行封面取色（播放时再取）\n- 全屏播放器：歌词只重绘当前行，去掉每 50ms 一次的滚动定位与强制布局\n- 桌面歌词进度改为跟随屏幕刷新（Choreographer），息屏时不再空转\n- 移动端播放列表抽屉首开分批挂载，首开最坏长任务约 1.2s → 0.65s\n\n### 🐛 Bug 修复\n\n- 修复个人主页「听歌排行」点进去变成播放历史页，改为打开真实听歌排行（所有时间）\n- 卡片模糊度：未启用自定义壁纸时滑块置灰并说明原因；个人主页卡片在壁纸模式下正确响应模糊度\n- 红心同步网易云失败时回滚并提示，不再出现本地与云端不一致；本地音乐不会误触发网易云红心\n- Android 启动器图标图形缩小至 72%，圆形图标不再被裁角\n- 版本号恢复随版本迭代更新（Android versionName/versionCode 与应用内「关于」均读取此版本）\n- 修复「检查更新」指向上游项目发布页、移动端会下载到上游安装包的问题\n- 修复 Windows 升级时旧版本未能关闭却被当作已卸载、可能覆盖到被占用文件的问题\n\n### ⚠️ 升级须知\n\n- Android 版从本版本起使用正式签名，之前安装的测试版需先卸载再安装本版本（仅此一次），之后可直接应用内更新",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.3.0",
+  "mirrors": [
+    "https://gh.lk.cc/",
+    "https://ghproxy.cn/",
+    "https://ghproxy.net/",
+    "https://gitproxy.click/",
+    "https://github.tbedu.top/",
+    "https://github.moeyy.xyz/"
+  ],
+  "windows": {
+    "name": "LiteMusic-Setup-5.3.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.3.0/LiteMusic-Setup-5.3.0.exe",
+    "size": 495405231,
+    "sha256": "fd84e73023c4f611ca5c60f8e2a4d4c286b7799c0e9326c0d85448a643733920"
+  },
+  "android": {
+    "name": "LiteMusic-5.3.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.3.0/LiteMusic-5.3.0.apk",
+    "size": 7281805,
+    "sha256": "08fb87291f2693556f0f447b8a9da4c4e4afc4e8be3378b2d43102d8eab22a7b",
+    "versionCode": 5003000
+  }
+}
