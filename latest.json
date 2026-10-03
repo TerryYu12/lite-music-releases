@@ -1,0 +1,27 @@
+{
+  "version": "5.3.1",
+  "publishedAt": "2026-10-03T14:37:06.088Z",
+  "notes": "### 🐛 Bug 修复\n\n- 修复 5.3.0 生产包启动白屏（循环导入导致模块初始化顺序错乱）\n- 修复 Windows 安装包误将项目源码与本地配置文件打包进去的问题，现在只打包运行所需文件\n- 发布脚本：修复 Windows 下 APK 签名校验；发布前自动做白屏检测与安装包内容检查\n\n### ⚠️ 升级须知\n\n- 5.3.0 启动白屏且已撤回，无法通过应用内更新升级；装过 5.3.0 的设备请卸载后手动安装 5.3.1\n- Android 版更换了签名密钥，之前装过任何版本的设备都需要先卸载再安装 5.3.1（仅此一次）",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.3.1",
+  "mirrors": [
+    "https://gh.lk.cc/",
+    "https://ghproxy.cn/",
+    "https://ghproxy.net/",
+    "https://gitproxy.click/",
+    "https://github.tbedu.top/",
+    "https://github.moeyy.xyz/"
+  ],
+  "windows": {
+    "name": "LiteMusic-Setup-5.3.1.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.3.1/LiteMusic-Setup-5.3.1.exe",
+    "size": 321250454,
+    "sha256": "9f56747f5008e78085a6d4f0e895455f0fd2260a7d56b92e237702672ca807b3"
+  },
+  "android": {
+    "name": "LiteMusic-5.3.1.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.3.1/LiteMusic-5.3.1.apk",
+    "size": 7281805,
+    "sha256": "847ff35f6f3862386aa43b597da48b03e4c94c82203863fe6e6db2c982780a9e",
+    "versionCode": 5003001
+  }
+}
