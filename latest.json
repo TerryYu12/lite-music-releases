@@ -1,8 +1,8 @@
 {
-  "version": "5.5.0",
-  "publishedAt": "2026-10-04T10:40:40.207Z",
-  "notes": "### ✨ 新功能\n\n- 系统媒体卡片（如小米控制中心）与锁屏进度条随播放走动，并可拖动跳转\n- 系统媒体卡片「词」按钮区分 关闭 / 开启 / 锁定 三种图标；桌面歌词锁定后点「词」先解锁，再点关闭\n- 应用日志：Android 设置页新增「系统管理」页，可查看、导出、清除日志\n- 「关于」页「BUG 反馈」改为填写问题描述并附带日志提交给开发者，移除 QQ 群与 Telegram\n- 移动端个人页去掉歌单区域的大背景底板，只保留歌单卡片\n- 移动端首页「新歌」列表改为卡片样式，受卡片模糊度与透明度设置控制\n- 移动端歌词页字号下限降到 12，行距下限降到 1.0（步进 0.1），当前行字号与行间距跟随设置\n\n### 🐛 Bug 修复\n\n- 修复 Android 桌面歌词悬浮窗锁定、上一首、下一首、设置、关闭按钮不显示，导致无法锁定、调字号和颜色\n- 修复移动端歌词页右侧「返回封面」按钮与进度条重叠，点击误触进度条\n- 修复移动端设置页卡片不受卡片模糊度与透明度设置控制\n- 修复移动端底部导航栏文字被截断；界面字号「大」「特大」档略微调小\n- 修复 Android 桌面歌词刚播放或暂停后恢复时，要过一段时间才显示歌词（且从歌曲开头算起）\n- 修复 Android 上传到网盘失败（提示「网易云设备授权失败」或「上传参数不完整」）\n- 修复移动端个人页「更换背景」按钮点击无反应",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.5.0",
+  "version": "5.5.1",
+  "publishedAt": "2026-10-05T10:30:53.888Z",
+  "notes": "### 🐛 Bug 修复\n\n- 修复桌面端个人页某个接口超时（如网络慢）时，歌单、等级、听歌时长、关注粉丝全部加载失败，显示为默认值\n- 桌面端标题栏与登录页 Logo 改用新图标",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.5.1",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.5.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.5.0/LiteMusic-Setup-5.5.0.exe",
-    "size": 113004110,
-    "sha256": "44ff91b83a5173ea5dd568066599750874486020428445a5d8df0cd75ca9d7ba"
+    "name": "LiteMusic-Setup-5.5.1.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.5.1/LiteMusic-Setup-5.5.1.exe",
+    "size": 113008493,
+    "sha256": "080974f1bbfcc621776fc7b3dc1d88305adbf3ccf4fd5b7ba791c28abb1e7d11"
   },
   "android": {
-    "name": "LiteMusic-5.5.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.5.0/LiteMusic-5.5.0.apk",
-    "size": 7308017,
-    "sha256": "21e79d2f32e9870bfcc23f4eb5465ca1ccad8f721fea61d342edd86cbe07e1b5",
-    "versionCode": 5005000
+    "name": "LiteMusic-5.5.1.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.5.1/LiteMusic-5.5.1.apk",
+    "size": 7307373,
+    "sha256": "ca93da6a33aa90078b00b8ad2d369052697629a6d7fd01142a3526994819c156",
+    "versionCode": 5005001
   }
 }
