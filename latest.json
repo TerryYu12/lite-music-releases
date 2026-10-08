@@ -1,8 +1,8 @@
 {
-  "version": "5.5.1",
-  "publishedAt": "2026-10-05T10:30:53.888Z",
-  "notes": "### 🐛 Bug 修复\n\n- 修复桌面端个人页某个接口超时（如网络慢）时，歌单、等级、听歌时长、关注粉丝全部加载失败，显示为默认值\n- 桌面端标题栏与登录页 Logo 改用新图标",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.5.1",
+  "version": "5.6.0",
+  "publishedAt": "2026-10-08T04:17:19.095Z",
+  "notes": "### ✨ 新功能\n\n- 软件中文名改为「轻聆」（英文名仍为 Lite Music）\n- 灵动岛歌词更名为「声屿」，新增贴顶形态（默认）：紧贴屏幕顶边居中，鼠标移入时淡出并穿透，移开后恢复\n- 声屿改为两行显示（歌词 + 翻译/音译），逐字卡拉OK 改为白色柔边高亮，长句自动平移，换行带淡入淡出\n- 声屿双击隐藏 2 秒；右键菜单精简为水平居中、展开控制卡片、贴顶显示、锁定、关闭\n- 设置页新增声屿设置：形态、显示屏幕、重置位置、第二行内容、总是显示两行、暂停时自动隐藏、悬停展开控制卡片、律动条\n- 托盘新增「声屿选项」：切换形态、锁定/解锁、重置位置、选择屏幕\n- 「关于」页注明声屿的设计参考了 Lyricify 的「灵动词岛」（作者 WXRIW）\n- 新增播放页封面样式切换（黑胶唱片 / 专辑封面）：手机与平板单栏在底部辅助栏切换，平板双栏在右上角切换，双栏也可以显示带唱针的黑胶唱盘\n- 桌面端底部播放栏的音量条改为横向，向左弹出，不再与进度条相交\n\n### 🐛 Bug 修复\n\n- 修复播放音乐时未向网易云打卡导致听歌排行与累计听歌时长不增加的问题（支持桌面端与移动端）；本地歌曲不再上报，单曲循环每一遍都计入\n- 修复播放器多处点击歌手名无法跳转歌手详情页的问题，并修复连续切换歌手时重复请求\n- 修复 Android 平板模式下没有更新提示弹窗；更新弹窗内容过长时按钮被挤出屏幕\n- 修复平板模式单栏播放页在横屏矮屏下，歌名、歌手与进度条、时间、音质标签互相重叠的问题\n- 修复平板双栏播放页顶部歌名压住歌单名、红心压住双栏开关、右上角按钮过于拥挤的问题\n- 修复声屿在暗色封面下已唱歌词颜色过暗、看不清\n- 修复声屿慢速拖动时被磁吸卡在屏幕顶边或水平中线\n- 修复从声屿菜单或托盘关闭后，修改其他设置会导致下次启动声屿又出现\n- 修复主窗口最小化或隐藏到托盘时声屿、桌面歌词延迟数秒\n- 声屿界面文字支持多语言",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.6.0",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.5.1.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.5.1/LiteMusic-Setup-5.5.1.exe",
-    "size": 113008493,
-    "sha256": "080974f1bbfcc621776fc7b3dc1d88305adbf3ccf4fd5b7ba791c28abb1e7d11"
+    "name": "LiteMusic-Setup-5.6.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.6.0/LiteMusic-Setup-5.6.0.exe",
+    "size": 113038651,
+    "sha256": "2a78436bc9a110fcb7d723f4321174f4271577bd9df588fae8bb6514e08f7147"
   },
   "android": {
-    "name": "LiteMusic-5.5.1.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.5.1/LiteMusic-5.5.1.apk",
-    "size": 7307373,
-    "sha256": "ca93da6a33aa90078b00b8ad2d369052697629a6d7fd01142a3526994819c156",
-    "versionCode": 5005001
+    "name": "LiteMusic-5.6.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.6.0/LiteMusic-5.6.0.apk",
+    "size": 7320522,
+    "sha256": "c9e33674c810655f3110be62892867d7321eecb3282828177b8aa335b44f0bd1",
+    "versionCode": 5006000
   }
 }
