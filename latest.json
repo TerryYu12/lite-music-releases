@@ -1,8 +1,8 @@
 {
-  "version": "5.6.0",
-  "publishedAt": "2026-10-08T04:17:19.095Z",
-  "notes": "### ✨ 新功能\n\n- 软件中文名改为「轻聆」（英文名仍为 Lite Music）\n- 灵动岛歌词更名为「声屿」，新增贴顶形态（默认）：紧贴屏幕顶边居中，鼠标移入时淡出并穿透，移开后恢复\n- 声屿改为两行显示（歌词 + 翻译/音译），逐字卡拉OK 改为白色柔边高亮，长句自动平移，换行带淡入淡出\n- 声屿双击隐藏 2 秒；右键菜单精简为水平居中、展开控制卡片、贴顶显示、锁定、关闭\n- 设置页新增声屿设置：形态、显示屏幕、重置位置、第二行内容、总是显示两行、暂停时自动隐藏、悬停展开控制卡片、律动条\n- 托盘新增「声屿选项」：切换形态、锁定/解锁、重置位置、选择屏幕\n- 「关于」页注明声屿的设计参考了 Lyricify 的「灵动词岛」（作者 WXRIW）\n- 新增播放页封面样式切换（黑胶唱片 / 专辑封面）：手机与平板单栏在底部辅助栏切换，平板双栏在右上角切换，双栏也可以显示带唱针的黑胶唱盘\n- 桌面端底部播放栏的音量条改为横向，向左弹出，不再与进度条相交\n\n### 🐛 Bug 修复\n\n- 修复播放音乐时未向网易云打卡导致听歌排行与累计听歌时长不增加的问题（支持桌面端与移动端）；本地歌曲不再上报，单曲循环每一遍都计入\n- 修复播放器多处点击歌手名无法跳转歌手详情页的问题，并修复连续切换歌手时重复请求\n- 修复 Android 平板模式下没有更新提示弹窗；更新弹窗内容过长时按钮被挤出屏幕\n- 修复平板模式单栏播放页在横屏矮屏下，歌名、歌手与进度条、时间、音质标签互相重叠的问题\n- 修复平板双栏播放页顶部歌名压住歌单名、红心压住双栏开关、右上角按钮过于拥挤的问题\n- 修复声屿在暗色封面下已唱歌词颜色过暗、看不清\n- 修复声屿慢速拖动时被磁吸卡在屏幕顶边或水平中线\n- 修复从声屿菜单或托盘关闭后，修改其他设置会导致下次启动声屿又出现\n- 修复主窗口最小化或隐藏到托盘时声屿、桌面歌词延迟数秒\n- 声屿界面文字支持多语言",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.6.0",
+  "version": "5.7.0",
+  "publishedAt": "2026-10-11T15:09:02.206Z",
+  "notes": "### ✨ 新功能\n\n- 播放页歌手名旁的「关注」按钮可用了：点击关注 / 取消关注当前歌曲的主歌手，已关注显示为「已关注」（需 Cookie 或扫码登录；手机端与桌面端均支持）\n- 个人资料卡「更换背景」菜单新增「背景透明度」滑块，实时调节自定义壁纸、网易云原背景图、头像流光的透明度，设置会保存（手机端与桌面端共用）\n\n### 🐛 Bug 修复\n\n- 修复手机播放页在屏幕高度不足时（小屏手机、折叠屏、带三大金刚键的机型），歌名、歌手名、「关注」、爱心被进度条盖住：点歌手名或「关注」变成拖动进度条，无法跳转歌手详情页\n- 修复亮色封面的歌曲在播放页里歌手名、时间、爱心、上一首 / 下一首等按钮是深灰色，压在深色背景上几乎看不见；歌手名整体提亮\n- 修复部分歌词（时间戳写作 `[00:04:15]`，用冒号分隔百分秒）整首解析失败而不显示\n- Android 原生网络请求失败时，日志补充请求路径和错误原因，不再只有一行「Error」",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.7.0",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.6.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.6.0/LiteMusic-Setup-5.6.0.exe",
-    "size": 113038651,
-    "sha256": "2a78436bc9a110fcb7d723f4321174f4271577bd9df588fae8bb6514e08f7147"
+    "name": "LiteMusic-Setup-5.7.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.7.0/LiteMusic-Setup-5.7.0.exe",
+    "size": 113024534,
+    "sha256": "c053ba628411898d053cbbfa209075a5690e694fc9476fb65fe3949208c9e022"
   },
   "android": {
-    "name": "LiteMusic-5.6.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.6.0/LiteMusic-5.6.0.apk",
-    "size": 7320522,
-    "sha256": "c9e33674c810655f3110be62892867d7321eecb3282828177b8aa335b44f0bd1",
-    "versionCode": 5006000
+    "name": "LiteMusic-5.7.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.7.0/LiteMusic-5.7.0.apk",
+    "size": 7322354,
+    "sha256": "04c3347d8ff0dbc62870e779bb3cceae22105555d418f4ef6ed202a73d61281f",
+    "versionCode": 5007000
   }
 }
