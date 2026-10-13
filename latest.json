@@ -1,8 +1,8 @@
 {
-  "version": "5.7.0",
-  "publishedAt": "2026-10-11T15:09:02.206Z",
-  "notes": "### ✨ 新功能\n\n- 播放页歌手名旁的「关注」按钮可用了：点击关注 / 取消关注当前歌曲的主歌手，已关注显示为「已关注」（需 Cookie 或扫码登录；手机端与桌面端均支持）\n- 个人资料卡「更换背景」菜单新增「背景透明度」滑块，实时调节自定义壁纸、网易云原背景图、头像流光的透明度，设置会保存（手机端与桌面端共用）\n\n### 🐛 Bug 修复\n\n- 修复手机播放页在屏幕高度不足时（小屏手机、折叠屏、带三大金刚键的机型），歌名、歌手名、「关注」、爱心被进度条盖住：点歌手名或「关注」变成拖动进度条，无法跳转歌手详情页\n- 修复亮色封面的歌曲在播放页里歌手名、时间、爱心、上一首 / 下一首等按钮是深灰色，压在深色背景上几乎看不见；歌手名整体提亮\n- 修复部分歌词（时间戳写作 `[00:04:15]`，用冒号分隔百分秒）整首解析失败而不显示\n- Android 原生网络请求失败时，日志补充请求路径和错误原因，不再只有一行「Error」",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.7.0",
+  "version": "5.8.0",
+  "publishedAt": "2026-10-13T13:02:51.832Z",
+  "notes": "### ✨ 新功能\n\n- 移动端歌曲列表改版：去掉每行播放按钮与收藏爱心（收藏/取消收藏移入「…」菜单），菜单按钮缩小、行高收紧，腾出的空间全部留给歌曲名；歌名、歌手名过长时自动循环滚动显示（手机端与平板触屏布局生效，桌面端不变）\n- 听歌排行新增「最近一周 / 所有时间」两个选项卡（默认最近一周，对齐官方客户端），每首歌显示播放次数与累计播放时长（时长按 歌曲时长 × 播放次数 估算，界面上以「约」标注，超过 1 小时用 h 显示）\n- 歌曲评论区支持回复：每条评论都可「回复」或打开「回复详情」；回复详情（楼层）支持分页加载、楼内点赞、楼内继续回复；回复时显示回复对象提示，发送成功后评论区与楼层自动刷新\n\n### 🐛 Bug 修复\n\n- 修复「添加到歌单」添加失败却不生效的问题：手机端进程内请求丢失 POST 参数，服务端返回「请求参数错误」被误判为成功并提示「添加成功」，实际歌单里没有新歌；加到歌单、收藏歌单、创建歌单等同类接口一并恢复\n- 修复手机端「添加到歌单」抽屉打开时，系统返回键无法关闭抽屉（会误触底层页面返回）\n- 修复并发加载同一首歌歌词时偶发「新增失败 ConstraintError」（歌词缓存改为覆盖写入）",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.8.0",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.7.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.7.0/LiteMusic-Setup-5.7.0.exe",
-    "size": 113024534,
-    "sha256": "c053ba628411898d053cbbfa209075a5690e694fc9476fb65fe3949208c9e022"
+    "name": "LiteMusic-Setup-5.8.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.8.0/LiteMusic-Setup-5.8.0.exe",
+    "size": 113031289,
+    "sha256": "c34ba880744e22e957bcf1519de889319593de5e9309d4caff11ec07fc1c8a5c"
   },
   "android": {
-    "name": "LiteMusic-5.7.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.7.0/LiteMusic-5.7.0.apk",
-    "size": 7322354,
-    "sha256": "04c3347d8ff0dbc62870e779bb3cceae22105555d418f4ef6ed202a73d61281f",
-    "versionCode": 5007000
+    "name": "LiteMusic-5.8.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.8.0/LiteMusic-5.8.0.apk",
+    "size": 7324233,
+    "sha256": "46667f7bd56d708b41baeca3e819bfc763b6d9c6ed131549c7522d67298017e2",
+    "versionCode": 5008000
   }
 }
