@@ -1,8 +1,8 @@
 {
-  "version": "5.8.0",
-  "publishedAt": "2026-10-13T13:02:51.832Z",
-  "notes": "### ✨ 新功能\n\n- 移动端歌曲列表改版：去掉每行播放按钮与收藏爱心（收藏/取消收藏移入「…」菜单），菜单按钮缩小、行高收紧，腾出的空间全部留给歌曲名；歌名、歌手名过长时自动循环滚动显示（手机端与平板触屏布局生效，桌面端不变）\n- 听歌排行新增「最近一周 / 所有时间」两个选项卡（默认最近一周，对齐官方客户端），每首歌显示播放次数与累计播放时长（时长按 歌曲时长 × 播放次数 估算，界面上以「约」标注，超过 1 小时用 h 显示）\n- 歌曲评论区支持回复：每条评论都可「回复」或打开「回复详情」；回复详情（楼层）支持分页加载、楼内点赞、楼内继续回复；回复时显示回复对象提示，发送成功后评论区与楼层自动刷新\n\n### 🐛 Bug 修复\n\n- 修复「添加到歌单」添加失败却不生效的问题：手机端进程内请求丢失 POST 参数，服务端返回「请求参数错误」被误判为成功并提示「添加成功」，实际歌单里没有新歌；加到歌单、收藏歌单、创建歌单等同类接口一并恢复\n- 修复手机端「添加到歌单」抽屉打开时，系统返回键无法关闭抽屉（会误触底层页面返回）\n- 修复并发加载同一首歌歌词时偶发「新增失败 ConstraintError」（歌词缓存改为覆盖写入）",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.8.0",
+  "version": "5.9.4",
+  "publishedAt": "2026-10-24T05:17:31.511Z",
+  "notes": "### 🐛 Bug 修复\n\n- 修复 QQ 音乐会员（绿钻）账号仍无法播放带 VIP 徽标的歌曲：播放前的受限预拦截原为酷我引导音设计，把 QQ 的 `pay_play` 会员标记也当成受限直接拦下，v5.9.3 的取链凭据修复因此从未执行；现在 QQ 会员曲交给取链按账号判断，真受限仍提示「仅支持客户端/会员播放」，未登录提示去登录\n- 修复 QQ 音乐曲目的播放记录不同步到官方：原听歌打卡只上报网易云，QQ 曲目被直接跳过；现在 QQ 曲目实际播放满 1 秒后，在切歌、播完或停止时上报到 QQ 官方「最近播放」（需登录 QQ 账号）\n- 移除上游遗留的两段百度统计脚本（hm.baidu.com）：系统广告拦截模块会因这两个冷启动请求，在页面顶部弹出「轻聆 + 应用图标」的标记条；本应用定位纯净无广告，本就不应有统计埋点",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.9.4",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.8.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.8.0/LiteMusic-Setup-5.8.0.exe",
-    "size": 113031289,
-    "sha256": "c34ba880744e22e957bcf1519de889319593de5e9309d4caff11ec07fc1c8a5c"
+    "name": "LiteMusic-Setup-5.9.4.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.4/LiteMusic-Setup-5.9.4.exe",
+    "size": 113483400,
+    "sha256": "715d8ba26d1a384bf6d49694f4bd1b439fd54984d184bc846a36fb196474aed7"
   },
   "android": {
-    "name": "LiteMusic-5.8.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.8.0/LiteMusic-5.8.0.apk",
-    "size": 7324233,
-    "sha256": "46667f7bd56d708b41baeca3e819bfc763b6d9c6ed131549c7522d67298017e2",
-    "versionCode": 5008000
+    "name": "LiteMusic-5.9.4.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.4/LiteMusic-5.9.4.apk",
+    "size": 7416555,
+    "sha256": "d0619674e53ccb5db1d5a9918bdf8a7e15bed4d5c264fbcbf0215d10e5a2bd8e",
+    "versionCode": 5009004
   }
 }
