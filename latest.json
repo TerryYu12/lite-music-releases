@@ -1,8 +1,8 @@
 {
-  "version": "5.9.4",
-  "publishedAt": "2026-10-24T05:17:31.511Z",
-  "notes": "### 🐛 Bug 修复\n\n- 修复 QQ 音乐会员（绿钻）账号仍无法播放带 VIP 徽标的歌曲：播放前的受限预拦截原为酷我引导音设计，把 QQ 的 `pay_play` 会员标记也当成受限直接拦下，v5.9.3 的取链凭据修复因此从未执行；现在 QQ 会员曲交给取链按账号判断，真受限仍提示「仅支持客户端/会员播放」，未登录提示去登录\n- 修复 QQ 音乐曲目的播放记录不同步到官方：原听歌打卡只上报网易云，QQ 曲目被直接跳过；现在 QQ 曲目实际播放满 1 秒后，在切歌、播完或停止时上报到 QQ 官方「最近播放」（需登录 QQ 账号）\n- 移除上游遗留的两段百度统计脚本（hm.baidu.com）：系统广告拦截模块会因这两个冷启动请求，在页面顶部弹出「轻聆 + 应用图标」的标记条；本应用定位纯净无广告，本就不应有统计埋点",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.9.4",
+  "version": "5.9.5",
+  "publishedAt": "2026-10-30T13:34:42.000Z",
+  "notes": "### ✨ 新功能\n\n- 酷狗乐馆：新增酷狗歌手库（按分类/首字母筛选与歌手热门单曲列表）、歌单广场（多分类歌单聚合与详情跳转）、相似歌曲推荐（基于专辑音频推荐），并在主页展示乐馆入口与相似歌曲转盘\n\n### 🐛 Bug 修复\n\n- 修复网易云听歌记录与时长未计入官方：重构打卡链路为两段式时序，起播（`startplay`）立即建立网易云最近播放会话，播完或切歌结算（`play`）携带累计秒数上报，避免服务端反作弊机制判定无时间间隔而静默丢弃\n- 修复最近听歌打开变成收藏历史：个人主页「最近播放」快捷入口与听歌排行回退跳转修正为移动端独立播放历史路由（`/play-history`）\n- 修复云端播放历史鉴权误判：扫码登录及 Token 登录用户在播放历史页不再被误判为未登录\n- 修复搜索栏心动模式按钮只识别 Cookie 登录态的问题：放开至扫码及 Token 登录态\n- 修复 Alger 服务端响应结构下歌单曲目解析异常问题",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.9.5",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.9.4.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.4/LiteMusic-Setup-5.9.4.exe",
-    "size": 113483400,
-    "sha256": "715d8ba26d1a384bf6d49694f4bd1b439fd54984d184bc846a36fb196474aed7"
+    "name": "LiteMusic-Setup-5.9.5.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.5/LiteMusic-Setup-5.9.5.exe",
+    "size": 113455674,
+    "sha256": "2b1d147da2a171ebd9fdb304cb6fb6ea5974e264c9e6828f77753c487ceced0c"
   },
   "android": {
-    "name": "LiteMusic-5.9.4.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.4/LiteMusic-5.9.4.apk",
-    "size": 7416555,
-    "sha256": "d0619674e53ccb5db1d5a9918bdf8a7e15bed4d5c264fbcbf0215d10e5a2bd8e",
-    "versionCode": 5009004
+    "name": "LiteMusic-5.9.5.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.5/LiteMusic-5.9.5.apk",
+    "size": 7418271,
+    "sha256": "b50f347fcf6ddcd330362f088bd75c3cffd7165af59b0c2f986cf744cc06010a",
+    "versionCode": 5009005
   }
 }
