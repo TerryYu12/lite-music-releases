@@ -1,8 +1,8 @@
 {
-  "version": "5.10.0",
-  "publishedAt": "2026-10-31T07:53:05.263Z",
-  "notes": "### ✨ 新功能\n\n- 自定义字体导入：基础设置支持用户导入本地字体文件（.ttf / .otf / .woff / .woff2），基于 IndexedDB 安全持久化大字体二进制，全局注入 CSS FontFace 立即生效，并支持一键恢复默认字体\n- 平台账号独立退出选择：重构退出登录流程为多账号选择弹窗，支持单独退出网易云、QQ 音乐、酷狗等单一平台，或一键退出全部账号，杜绝退出误伤\n- 网易云账号自检：个人主页新增网易云自检盾牌入口，一键自检当前 Token/Cookie 会话有效性与网络状态，支持一键复制诊断信息，对齐外部音源自检能力\n- 平板与 PC 双栏黑胶播放页对齐：平板端与 PC 默认开启双栏与黑胶唱盘模式；平板左侧布局全面与 PC 对齐（黑胶唱盘、唱针、封面样式切换按钮、音质胶囊、歌曲信息、完整控制栏与功能操作按钮）；支持从播放器直接呼出移动端完整设置抽屉\n- 歌词假名+罗马音逐字绑定与平滑聚焦：\n  - 日文假名与其罗马音一一绑定对齐（ruby-style），下方罗马音贴合假名同步逐字渐变高亮与滚动，支持音、译逐字\n  - 新增当前滚动行平滑聚焦缩放功能（`focusCurrentLyric`），当前句大字突显，上下文平滑过渡\n  - 支持自定义翻译与罗马音字体大小调节\n\n### 🐛 Bug 修复\n\n- 修复网易云移动端登录与 Cookie 录入：修复移动端官方手机验证码登录的拦截误判；规范化提取 `MUSIC_U` 并补齐 `__csrf`，双向同步 localStorage 与 CookieJar，解决 Cookie 录入提示无效的问题\n- 修复移动端资料卡自检按钮遮挡头像：将自检胶囊独立移至顶部左侧，与右侧「更换背景」左右对称，给头像彻底让出居中空间\n- 优化歌词滚动流畅度：去除额外防抖延迟，采用 DOM 直接平滑定位，消除逐字滚动顿挫感",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.10.0",
+  "version": "5.11.0",
+  "publishedAt": "2026-10-31T12:54:58.424Z",
+  "notes": "### ✨ 新功能\n\n- 歌词字音垂直对齐与汉字振假名（Furigana）：\n  - 基于假名锚点与动态规划算法重构分词与音节绑定，彻底根除日文复合词分词粒度不一致导致的罗马音截断与错位问题\n  - 支持日文汉字上方自动注音振假名（Hiragana ruby），汉字、假名与下方罗马音垂直居中同轴呈现\n  - 支持普通滚动歌词（非逐字）智能字音垂直对齐，告别两条文本脱节平行的旧体验\n- 歌词音、译跟随主歌词等比缩放：\n  - 音（罗马音/振假名）与译（翻译）重构为基于主歌词的相对比例驱动，彻底解决主歌词调大后音、译纹丝不动与最大值脱节问题\n  - 无论是侧边栏 `+`/`-` 步进调节、设置面板字号滑块调整，还是当前行聚焦放大（focusCurrentLyric / 1.15x），主歌词、音、译浑然一体等比例缩放\n- 平板与 PC 双栏播放器视觉升级：\n  - 全额保留黑胶唱盘核心质感，唱针起落、同心微槽高光与旋转交互平滑顺畅\n  - 参考 Refined Now Playing Next 与 AMLL 视觉语言，优化左侧歌曲标题、歌手与操作栏排版，右侧歌词流引入层次感景深与当前行柔和光晕",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.11.0",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.10.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.10.0/LiteMusic-Setup-5.10.0.exe",
-    "size": 113384444,
-    "sha256": "b8c644fe327d8e802d3abd473cf45955931afb35449e3d1a6232fd039c2231e5"
+    "name": "LiteMusic-Setup-5.11.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.11.0/LiteMusic-Setup-5.11.0.exe",
+    "size": 113375843,
+    "sha256": "a751a5024e3698479e9fdca7588c533bb70c2280992b1a5ecbb69b6ff26d8356"
   },
   "android": {
-    "name": "LiteMusic-5.10.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.10.0/LiteMusic-5.10.0.apk",
-    "size": 7426563,
-    "sha256": "6ef4ee00068b6ddbe45453a463b1f1c1c0f610c87a2def0f2908179b354a50f3",
-    "versionCode": 5010000
+    "name": "LiteMusic-5.11.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.11.0/LiteMusic-5.11.0.apk",
+    "size": 7429679,
+    "sha256": "7a637bcaadc0d16d2d54ead52371a94f8b853ac41c332b7208d081a91e5e3e11",
+    "versionCode": 5011000
   }
 }
