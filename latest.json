@@ -1,8 +1,8 @@
 {
-  "version": "5.9.5",
-  "publishedAt": "2026-10-30T13:34:42.000Z",
-  "notes": "### ✨ 新功能\n\n- 酷狗乐馆：新增酷狗歌手库（按分类/首字母筛选与歌手热门单曲列表）、歌单广场（多分类歌单聚合与详情跳转）、相似歌曲推荐（基于专辑音频推荐），并在主页展示乐馆入口与相似歌曲转盘\n\n### 🐛 Bug 修复\n\n- 修复网易云听歌记录与时长未计入官方：重构打卡链路为两段式时序，起播（`startplay`）立即建立网易云最近播放会话，播完或切歌结算（`play`）携带累计秒数上报，避免服务端反作弊机制判定无时间间隔而静默丢弃\n- 修复最近听歌打开变成收藏历史：个人主页「最近播放」快捷入口与听歌排行回退跳转修正为移动端独立播放历史路由（`/play-history`）\n- 修复云端播放历史鉴权误判：扫码登录及 Token 登录用户在播放历史页不再被误判为未登录\n- 修复搜索栏心动模式按钮只识别 Cookie 登录态的问题：放开至扫码及 Token 登录态\n- 修复 Alger 服务端响应结构下歌单曲目解析异常问题",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.9.5",
+  "version": "5.10.0",
+  "publishedAt": "2026-10-31T07:53:05.263Z",
+  "notes": "### ✨ 新功能\n\n- 自定义字体导入：基础设置支持用户导入本地字体文件（.ttf / .otf / .woff / .woff2），基于 IndexedDB 安全持久化大字体二进制，全局注入 CSS FontFace 立即生效，并支持一键恢复默认字体\n- 平台账号独立退出选择：重构退出登录流程为多账号选择弹窗，支持单独退出网易云、QQ 音乐、酷狗等单一平台，或一键退出全部账号，杜绝退出误伤\n- 网易云账号自检：个人主页新增网易云自检盾牌入口，一键自检当前 Token/Cookie 会话有效性与网络状态，支持一键复制诊断信息，对齐外部音源自检能力\n- 平板与 PC 双栏黑胶播放页对齐：平板端与 PC 默认开启双栏与黑胶唱盘模式；平板左侧布局全面与 PC 对齐（黑胶唱盘、唱针、封面样式切换按钮、音质胶囊、歌曲信息、完整控制栏与功能操作按钮）；支持从播放器直接呼出移动端完整设置抽屉\n- 歌词假名+罗马音逐字绑定与平滑聚焦：\n  - 日文假名与其罗马音一一绑定对齐（ruby-style），下方罗马音贴合假名同步逐字渐变高亮与滚动，支持音、译逐字\n  - 新增当前滚动行平滑聚焦缩放功能（`focusCurrentLyric`），当前句大字突显，上下文平滑过渡\n  - 支持自定义翻译与罗马音字体大小调节\n\n### 🐛 Bug 修复\n\n- 修复网易云移动端登录与 Cookie 录入：修复移动端官方手机验证码登录的拦截误判；规范化提取 `MUSIC_U` 并补齐 `__csrf`，双向同步 localStorage 与 CookieJar，解决 Cookie 录入提示无效的问题\n- 修复移动端资料卡自检按钮遮挡头像：将自检胶囊独立移至顶部左侧，与右侧「更换背景」左右对称，给头像彻底让出居中空间\n- 优化歌词滚动流畅度：去除额外防抖延迟，采用 DOM 直接平滑定位，消除逐字滚动顿挫感",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.10.0",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.9.5.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.5/LiteMusic-Setup-5.9.5.exe",
-    "size": 113455674,
-    "sha256": "2b1d147da2a171ebd9fdb304cb6fb6ea5974e264c9e6828f77753c487ceced0c"
+    "name": "LiteMusic-Setup-5.10.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.10.0/LiteMusic-Setup-5.10.0.exe",
+    "size": 113384444,
+    "sha256": "b8c644fe327d8e802d3abd473cf45955931afb35449e3d1a6232fd039c2231e5"
   },
   "android": {
-    "name": "LiteMusic-5.9.5.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.9.5/LiteMusic-5.9.5.apk",
-    "size": 7418271,
-    "sha256": "b50f347fcf6ddcd330362f088bd75c3cffd7165af59b0c2f986cf744cc06010a",
-    "versionCode": 5009005
+    "name": "LiteMusic-5.10.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.10.0/LiteMusic-5.10.0.apk",
+    "size": 7426563,
+    "sha256": "6ef4ee00068b6ddbe45453a463b1f1c1c0f610c87a2def0f2908179b354a50f3",
+    "versionCode": 5010000
   }
 }
