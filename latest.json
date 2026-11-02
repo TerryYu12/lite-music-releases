@@ -1,8 +1,8 @@
 {
-  "version": "5.13.0",
-  "publishedAt": "2026-11-02T05:21:46.153Z",
-  "notes": "### ✨ 新功能\n\n- Android 原生 Edge-to-Edge 沉浸与安全区穿透：\n  - 适配 Android 10~15 原生沉浸全屏与挖孔屏穿透，支持在系统状态栏与手势导航条后方延伸渲染\n  - 原生 Insets 动态注入与 CSS 变量（`--safe-area-inset-top` / `--safe-area-inset-bottom`）双向联动，消除黑边并保障顶栏、搜索栏及底部导航的安全避让\n- 歌词 120 FPS 高刷走字引擎与 GPU 硬件轨重构：\n  - 彻底解耦高频播放进度（`nowTime`）对大范围模板的被动渲染触发，接入统一帧循环调度器\n  - 歌词滚动与逐字高亮全面切换至基于原生 DOM 直接驱动的无级硬件平滑过渡，在 90Hz / 120Hz 高刷新率屏幕上如丝般顺滑，告别掉帧与卡顿\n- 平板横屏沉浸式双栏播放页：\n  - 对标 Apple Music 平板交互美学，重构左侧黑胶唱盘与专辑封面双视图，配备专属大字号歌曲标题、艺术家信息与原生胶囊控制栏\n  - 播放界面顶部按钮行间距优化收紧，与系统状态栏保持黄金比例避让\n- 歌词视觉与排版深度定制：\n  - 歌词字号上限放宽至 72px，播放设置新增「当前行聚焦缩放」自定义滑块，上下文过渡更自然\n  - 歌词界面侧边控制栏新增展开/收起按钮，支持一键折叠音标/翻译/字号/行距悬浮条，提供沉浸纯净听歌体验\n  - 大字号歌词换行边界智能防护，结合日文汉字振假名（`<ruby>`）防撕裂与换行断裂保护\n- 播放界面超长歌名与歌手名跑马灯：\n  - 播放界面歌曲名及歌手名超出容器宽度时，自动启用平滑无缝横向循环滚动跑马灯，短文本保持靠左静止呈现",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.13.0",
+  "version": "5.14.0",
+  "publishedAt": "2026-11-02T13:08:52.207Z",
+  "notes": "### ✨ 新功能\n\n- 歌词逐字卡拉OK全局独立开关：\n  - 桌面端与移动端歌词设置新增「逐字卡拉OK」控制开关，副标题明确标注「音源支持时开启平滑擦色，关闭则为整行高亮」\n  - 渲染层全面接入配置判断，开启时若音源含逐字时间戳（YRC/QRC/KRC）则启用平滑字符级擦色，关闭时即便音源支持也强制退回清晰整行高亮\n- 歌词自定义颜色交互升级与十六进制色号打字：\n  - 全面升级为 Naive UI 专业取色器，提供平滑可拖拽的彩虹色相条（Hue Slider）与二维饱和度画布\n  - 新增独立 HEX 输入框，支持键盘直接打字输入或粘贴十六进制色号，失焦自动规范化补齐 `#`\n  - 移动端浮层容器挂载优化，防止抽屉遮挡取色面板\n- 平板横屏硬件轨无级平滑拖动与进度条事件解耦：\n  - 平板歌词滚动全面接入 rAF 硬件轨与手势动量阻尼，消除触摸拖动卡顿与丢帧\n  - 播放进度条拖动状态独立解耦（`progressDragTime`），杜绝播放高频轮询冲刷导致的跳帧与拖动失效\n- 多源外部歌词解析增强与日文假名字符级投影对齐：\n  - 升级 QQ 音乐 Base64 翻译与 QRC 罗马音解码，扩展酷狗音乐 KRC 多语言字段与酷我实体解析\n  - 扩充日文假名字典与多语言 LRC 合并逻辑，字符级投影算法保障罗马音与振假名精准同轴对齐\n- 进程退出与状态持久化加固：\n  - 优化主进程退出流程，优雅释放音频设备与窗口句柄，杜绝硬杀进程导致的配置损坏\n  - 移动端切换至后台或关闭瞬间立即执行播放进度即时存盘，彻底消除杀后台丢失播放进度的顽疾\n- 移动端单曲信息排版优化：\n  - 优化超长歌手名跑马灯换行与宽度自适应，关注按钮紧贴歌手名后方，界面更加美观紧凑",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.14.0",
   "mirrors": [
     "https://gh.lk.cc/",
     "https://ghproxy.cn/",
@@ -12,16 +12,23 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.13.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.13.0/LiteMusic-Setup-5.13.0.exe",
-    "size": 113320949,
-    "sha256": "9fca8c9ae5eac11b016039d6c6433af9fdec78afafbace2ff3a0e9a6f2673389"
+    "name": "LiteMusic-Setup-5.14.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.14.0/LiteMusic-Setup-5.14.0.exe",
+    "size": 113325793,
+    "sha256": "2f6df6b76458b886f6145cea2b692e2f33485663817906edb4bbd01eb7d6a390"
   },
   "android": {
-    "name": "LiteMusic-5.13.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.13.0/LiteMusic-5.13.0.apk",
-    "size": 7438907,
-    "sha256": "5e83733df81226a3e53936872af4866fb370d465c45b3e1dacec9389c18d2ec5",
-    "versionCode": 5013000
+    "name": "LiteMusic-5.14.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.14.0/LiteMusic-5.14.0.apk",
+    "size": 7441083,
+    "sha256": "a774da91fa4082f616fe3cfdac846c6cbefe4ab45c9d46bfa9bc16db1e798b93",
+    "versionCode": 5014000
+  },
+  "androidKazami": {
+    "name": "LiteMusic-Kazami-5.14.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.14.0/LiteMusic-Kazami-5.14.0.apk",
+    "size": 15210866,
+    "sha256": "70268ed7631a1efb8cfc0e7027180d8c3a92897bf849421f9e06e4f25ee6b45a",
+    "versionCode": 5014000
   }
 }
