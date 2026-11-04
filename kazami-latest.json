@@ -1,8 +1,8 @@
 {
-  "version": "5.17.0",
-  "publishedAt": "2026-11-04T02:14:54.319Z",
-  "notes": "### 修复\n\n- **沉浸歌词全屏居中**：进入沉浸后歌名、歌手也一起隐藏，歌词区铺满整屏（连状态栏、手势条一起算），当前行落在屏幕的视觉中心（几何正中略偏上；原先只在状态栏以下的区域里居中，看起来偏下，多层歌词更明显）；手指按住歌词时歌名歌手随控件一起回来。\n- **纯音乐提示居中**：「纯音乐，请欣赏」这类只有一行的歌词水平、垂直都居中；每首歌的第一句原先被夹在歌词区顶部，现在也能滚到中间。平板横屏双栏同样生效。\n- **点歌词不能立即切回封面**：手指按下时程序会先校准一次滚动位置，这一下被误判成「在滑动」，点击被吞掉。改为按手指实际位移判断是否在滑动；现在沉浸模式与歌词模式下点任意位置（包括歌词）都会直接切回封面。惯性滚动中点一下仍然只是停住。\n\n### 调整\n\n- **歌词行距范围加大**：上下句间距可调范围从 1.0–2.6 放宽到 0.8–4.0（播放设置、设置页、平板侧边栏同步）。",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v5.17.0",
+  "version": "5.18.0",
+  "publishedAt": "2026-11-04T06:50:42.926Z",
+  "notes": "### 新功能\n\n- **本地音乐歌词**（安卓）：播放本地歌曲时按顺序找歌词——同名 `.lrc`（与歌曲在同一文件夹，UTF-8 / GBK 都能认）→ 音频标签里的歌词（mp3 的 USLT / SYLT / TXXX:LYRICS、flac 的 LYRICS、m4a 的 ©lyr，带不带时间戳都能显示）→ 按歌名 + 歌手 + 时长联网搜索（网易云 → QQ 音乐 → 酷狗）。搜到的结果会记住，同一首不再重复搜；没搜到的 3 天后再试。已经扫描过的歌不用重扫。\n- **歌词描边细调**：粗细改成连续滑块（0 为关闭），新增「深浅」滑块单独调描边浓淡；描边颜色一直显示，描边关着时选颜色会自动打开。原来的「跟随预设」保留为一个按钮。\n\n### 修复\n\n- **本地歌曲拉到别的歌的歌词**（安卓）：本地歌曲的 id 是文件路径算出的十六进制串，原先会被截成数字当网易云 id 去请求（如 `3fa9…` 变成 3 号歌曲），拿到错误或空的歌词。",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v5.18.0",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,10 +12,10 @@
     "https://github.moeyy.xyz/"
   ],
   "android": {
-    "name": "Kazami-5.17.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v5.17.0/Kazami-5.17.0.apk",
-    "size": 18658707,
-    "sha256": "4161de07a1980cb0f7608f3616a6627add32d6702d950092822b9352f86a54b7",
-    "versionCode": 5017000
+    "name": "Kazami-5.18.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v5.18.0/Kazami-5.18.0.apk",
+    "size": 17911789,
+    "sha256": "b77d50b095bdcea64f3f551fdfc2be711cec401db38df26adc97424dfbab6a23",
+    "versionCode": 5018000
   }
 }
