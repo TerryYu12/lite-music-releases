@@ -1,8 +1,8 @@
 {
-  "version": "5.17.0",
-  "publishedAt": "2026-11-03T06:22:17.304Z",
-  "notes": "### ✨ 新功能\n\n- 伴奏/原唱无缝切换与跨平台官方伴奏匹配（三期）：\n  - 伴奏音频架构：`audioService` 新增独立伴奏音频元素与 `origGainNode` / `accGainNode`，两轨统一汇总至主均衡器 EQ 链与主音量节点，保持全局音效与音量一致\n  - 80ms 交叉淡化无缝切换：首次点击「伴」触发伴奏延迟缓冲加载，原唱继续播放不静音，伴奏就绪后跳至当前进度并通过 80ms 线性音量淡化实现无感切换；后续来回切换 0ms 即时响应\n  - 智能防漂移与迟滞微调：每 500ms 动态监控两轨播放时间戳，采用「40ms 介入 / 10ms 退出」迟滞算法将时间偏差控制在 3~12ms 极低残差内，避免音高波动；偏差超过 300ms 触发精确硬跳转\n  - 跨平台官方同歌手伴奏聚合匹配：针对当前曲目自动按「酷狗 > QQ > 酷我 > 网易云」聚合搜索官方伴奏版本，严格实行歌名归一化匹配、同歌手交叉验证及「时长偏差 <= 2.5 秒」版本校验，彻底突破单平台伴奏覆盖率限制\n  - 伴/原 切换胶囊控件：新增简洁优雅的 `AccompanimentCapsule` 胶囊，无缝集成至桌面端底部播放栏、全屏歌词极简播放栏及移动端全屏歌词页，无伴奏时优雅置灰并提供状态气泡提示\n  - 国际化补齐：5 种语言（zh-CN / zh-Hant / en-US / ja-JP / ko-KR）同步补齐伴奏模式切换、匹配中与无伴奏提示文案",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.17.0",
+  "version": "5.17.2",
+  "publishedAt": "2026-11-05T15:02:38.351Z",
+  "notes": "### ⚠️ 升级须知\n\n- Android 版更换了签名密钥：之前装过任何版本的设备都无法应用内更新，需要先卸载旧版再手动安装（仅此一次）。卸载会清除本机设置和各平台登录状态，安装后需重新登录\n- 5.17.1 未单独发布，其修复（QQ 音乐登录过期识别、外部曲目受限时先询问换源）随本版一起发布，详见下方 v5.17.1 小节\n\n### 🐛 Bug 修复\n\n- Android 重启后上一首、播放列表和进度全部丢失：`main.ts` 在 `app.use(pinia)` 之前导入的手机端服务会提前创建 player / playerCore / playlist 等 store，而 pinia 在此之前注册的插件只会排队，这些 store 拿不到持久化插件，从未落盘。现在建好 pinia 后立即激活插件（移植自风见 Kazami 分支）\n- 大歌单只能搜到、播到已加载的前 200 首左右：进入歌单后后台分批补全整个歌单；搜索时立即补全；「播放全部」和点歌播放先用已加载部分开播，补全后在队列未被替换的前提下换成完整歌单，不打断当前曲目；换歌单时作废上一份补全（移植自风见 Kazami 分支）\n- 罗马音逐字对齐乱对：重写对齐算法，兼容按单词给出的罗马音、促音、长音 ō，连续汉字整组标注，识别原文括号注音，正文与括号和声分段对齐；完全对不上时整行显示罗马音，不再硬套。新增回归测试 `scripts/test-lyric-align.ts`（22 条）（移植自风见 Kazami 分支）\n\n### ⚡ 性能\n\n- 跑马灯改用 Web Animations 写死像素值：原先关键帧依赖 CSS 变量，Android WebView 只能在主线程逐帧计算样式\n- 全屏播放页打开时，被隐藏的底部播放栏进度条不再每 50ms 刷新",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.17.2",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,23 +12,16 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.17.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.17.0/LiteMusic-Setup-5.17.0.exe",
-    "size": 113293681,
-    "sha256": "7c26a850a123c9b887b08c397d367699217c59b02da9289315e7deb3c478b45a"
+    "name": "LiteMusic-Setup-5.17.2.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.17.2/LiteMusic-Setup-5.17.2.exe",
+    "size": 120808033,
+    "sha256": "067ee7b372a056d997b8e19964e26b3c64d7cd0a4d06dbc03d75c88831edbc00"
   },
   "android": {
-    "name": "LiteMusic-5.17.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.17.0/LiteMusic-5.17.0.apk",
-    "size": 7447550,
-    "sha256": "22d7ebb493572cdd1e03f71121711f6a9ee1ca34adc8dd284bc7332ec71fd13b",
-    "versionCode": 5017000
-  },
-  "androidKazami": {
-    "name": "LiteMusic-Kazami-5.17.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.17.0/LiteMusic-Kazami-5.17.0.apk",
-    "size": 15210866,
-    "sha256": "70268ed7631a1efb8cfc0e7027180d8c3a92897bf849421f9e06e4f25ee6b45a",
-    "versionCode": 5017000
+    "name": "LiteMusic-5.17.2.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.17.2/LiteMusic-5.17.2.apk",
+    "size": 7461899,
+    "sha256": "786396aea48756f724a90de306366af0ff541251d603072bcbb899e4383a4bda",
+    "versionCode": 5017002
   }
 }
