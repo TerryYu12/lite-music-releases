@@ -1,8 +1,8 @@
 {
-  "version": "6.0.1",
-  "publishedAt": "2026-11-05T05:51:29.997Z",
-  "notes": "### 修复\n\n- **聚焦模式抽搐**：换行时歌词居中滚动和缩放过渡来回抽动（第一句最明显）。现在所有行统一排版宽度，换行只做缩放动画，不再重新折行。\n- **手机聚焦模式右侧留白偏大**：左右留白改为一致。\n- **设置页图标偏移**：「关于」「播放音质」「主题」的图标偏到右上角，已居中。",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.1",
+  "version": "6.0.2",
+  "publishedAt": "2026-11-05T13:43:40.872Z",
+  "notes": "### 新功能\n\n- **酷狗 App 扫码登录**：设置 › 账号 › 酷狗音乐新增「酷狗 App 扫码登录」。用手机酷狗 App 扫一次码，就能读取个人歌单（我喜欢 / 自建 / 收藏）和歌单里的歌曲（网页登录拿不到个人歌单）。\n- **主界面文字描边**：设置 › 外观与主题新增「文字描边」，默认开启；粗细 0.2–1.5px 可调，颜色默认按日光 / 黄昏自动选择，也可以自选。播放页歌词仍用自己的描边设置。\n\n### 修复\n\n- **酷狗歌单加载失败（20006）**：安卓原生请求没声明 JSON，请求体被改写导致签名不符，已修复。\n- **酷狗个人歌单打开就失败**：个人歌单改用专门的曲目接口，353 首的大歌单也能分页加载。\n- **「重试」点了没反应**：重试会跳过缓存真正重新请求，失败结果不再缓存 10 分钟；失败时显示原因（错误码 / 超时 / 网络）。\n- **错误文案**：歌单失败不再显示成「平台资料加载失败」。\n- **设置页等处图标偏右下 / 右上**：系统字体放大时图标溢出底座，现在随实际字号居中；图标不再继承粗体。",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.2",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,10 +12,10 @@
     "https://github.moeyy.xyz/"
   ],
   "android": {
-    "name": "Kazami-6.0.1.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.0.1/Kazami-6.0.1.apk",
-    "size": 17897612,
-    "sha256": "0af3c7d6849cfdea6aa3fc1e2716dba4a98bbfdd0b727de6a13debe8d76d2813",
-    "versionCode": 6000001
+    "name": "Kazami-6.0.2.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.0.2/Kazami-6.0.2.apk",
+    "size": 17913883,
+    "sha256": "741cbe998bedd4066a091393cc4cc86bcde81711f2fb0a47d4a2392bd5fe1fb1",
+    "versionCode": 6000002
   }
 }
