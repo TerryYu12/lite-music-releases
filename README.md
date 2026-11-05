@@ -5,7 +5,7 @@
 ### 网易云音乐第三方客户端 · 日语歌词三层逐字对齐 · 手机 / 平板 / 电脑
 
 [![Release](https://img.shields.io/github/v/release/TerryYu12/lite-music-releases?label=Lite%20Music&color=60a5fa&style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/latest)
-[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.0.0-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.0)
+[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.0.1-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.1)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Windows-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
 
 <p>
@@ -26,7 +26,7 @@
 | :--- | :--- | :--- | :--- |
 | 🎵 **Lite Music** | Android | 想要轻量、纯净听歌体验 | [最新版](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
 | 💻 **Lite Music** | Windows x64 | 电脑端：桌面歌词、全局快捷键、悬浮窗 | [最新版](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
-| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的歌词页 | [⬇️ Kazami-6.0.0.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.0.0/Kazami-6.0.0.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.0) |
+| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的歌词页 | [⬇️ Kazami-6.0.1.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.0.1/Kazami-6.0.1.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.1) |
 
 - Android 7.0 及以上可用，手机和平板通用；Lite Music 和风见在同一台手机上**只能装一个**。
 - 风见和 Lite Music 正式版签名不同，从 Lite Music 换到风见需要先卸载（本地设置和播放记录会清空，网易云账号里的歌单不受影响）。
