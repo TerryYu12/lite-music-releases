@@ -1,8 +1,8 @@
 {
-  "version": "6.1.1",
-  "publishedAt": "2026-11-06T07:18:35.750Z",
-  "notes": "### 优化\n\n- **歌词只渲染屏幕附近的行**：屏幕外的歌词行保留等高外框、不渲染里面的字，带振假名 / 罗马音 / 翻译的歌词区元素从上万个降到约 850 个；打开播放页、拖进度条、开关翻译等需要重新排版的操作要算的量小很多，内存也更省。新进入范围的行等换行滚动走完再补，不和换行抢同一帧；手指滑动浏览时缓冲加倍。\n- **卡顿提示**：设置 › 歌词 › 卡拉OK 与播放页设置面板加一句提示——歌词滚动卡顿时可到系统设置 › 显示里把屏幕刷新率调低（如 60Hz）。",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.1",
+  "version": "6.1.2",
+  "publishedAt": "2026-11-06T07:45:08.893Z",
+  "notes": "### 修复\n\n- **逐字模式当前行翻译偏暗**：开启卡拉OK（逐字）时，当前行的翻译一直只有一半亮度（逐字翻译则要唱到才亮）。现在当前行翻译整行全程用翻译色高亮，与不开逐字时一致；原文、振假名、罗马音的逐字点亮不变。",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.2",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,10 +12,10 @@
     "https://github.moeyy.xyz/"
   ],
   "android": {
-    "name": "Kazami-6.1.1.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.1/Kazami-6.1.1.apk",
-    "size": 17919863,
-    "sha256": "a827e16febaf7f53d2b028d82072158e546dcd7b6f875c3e0d3682713151c1dc",
-    "versionCode": 6001001
+    "name": "Kazami-6.1.2.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.2/Kazami-6.1.2.apk",
+    "size": 17919939,
+    "sha256": "9c9e6e01c2c120e64be866be002140256f49c623be240ae45a1cdea9c7e6a318",
+    "versionCode": 6001002
   }
 }
