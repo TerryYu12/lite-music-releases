@@ -1,20 +1,20 @@
 <div align="center">
 
-# 🎵 Lite Music · 轻聆
+# 🎵 Lite Music · 轻聆 / 🌸 风见 Kazami
 
-### 网易云音乐极简第三方客户端 · 中日多层逐字歌词 · 电脑 / 手机 / 平板 / Web
+### 网易云音乐第三方客户端 · 极简轻快 / 日语歌词三层逐字对齐 · 电脑 / 手机 / 平板 / Web
 
 [![Release](https://img.shields.io/github/v/release/TerryYu12/lite-music-releases?label=Lite%20Music&color=60a5fa&style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20Web%2FPWA-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE-AlgerMusicPlayer.txt)
+[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.0.3-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.3)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20iOS%20PWA-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
 
 <p>
   <b>让听歌重回纯净、轻快与沉浸。</b><br/>
-  无广告、无社交动态捆绑，专注于高品质音乐播放与极致歌词阅读体验。<br/>
-  原生覆盖 <b>Windows</b> 与 <b>Android</b>，支持 <b>iPad / Web PWA</b> 大屏体验。
+  <b>Lite Music</b> 是纯净轻快的第三方网易云音乐客户端，专注于高品质音乐播放与全平台极致体验；<br/>
+  <b>风见 Kazami</b> 是其专为东方 Project「风见幽香」定制的主题分支，专门打磨日语歌的三层逐字歌词阅读手感。
 </p>
 
-[📥 下载与安装](#-下载与安装) · [✨ 核心特性](#-核心特性) · [📱 iPad / Web 版使用说明](#-ipad--web-版使用说明) · [📸 界面预览](#-界面预览) · [❓ 常见问题](#-常见问题)
+[📥 下载与安装](#-下载与安装) · [🎵 Lite Music 多端特性](#-lite-music-多端特性) · [🌸 风见 Kazami 功能一览](#-风见-kazami-功能一览) · [📱 iPad / Web (PWA) 说明](#-ipad--web-pwa-使用说明) · [📸 风见动态演示与截图](#-风见-kazami-动态演示与截图) · [📜 声明与致谢](#-声明与致谢)
 
 </div>
 
@@ -22,38 +22,131 @@
 
 ## 📥 下载与安装
 
-| 平台 | 适用设备 | 特性亮点 | 下载入口 |
+| 版本 | 平台 | 适合谁 / 特性亮点 | 下载入口 |
 | :--- | :--- | :--- | :--- |
-| 💻 **Windows** | Windows 10 / 11 (x64) | 桌面歌词悬浮窗、声屿灵动控制、全局快捷键、Mini 迷你模式、无损音频输出 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
-| 📱 **Android** | 手机 / 安卓平板 (Android 7.0+) | 状态栏/导航栏全沉浸、后台长效播放保活、桌面悬浮歌词、锁屏媒体控件 | [⬇️ 最新安装包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
-| 🍎 **iPad / Web** | iPad / 跨平台浏览器 (PWA) | 免安装，大屏双栏响应式排版、触屏深度优化、Safari 添加至主屏幕全屏运行 | [📖 启动与部署说明](#-ipad--web-版使用说明) |
+| 💻 **Lite Music** | Windows x64 | 电脑端：桌面悬浮歌词、声屿灵动控制、Mini 迷你模式、全局快捷键、无损播放 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
+| 📱 **Lite Music** | Android | 移动端：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词 | [⬇️ 最新安装包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
+| 🍎 **Lite Music** | iPad / Web (PWA) | 免安装：Safari 一键添加到主屏幕独立全屏运行、大屏横屏双栏排版、触屏深度优化 | [📖 启动与使用指南](#-ipad--web-pwa-使用说明) |
+| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页 | [⬇️ Kazami-6.0.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.0.3/Kazami-6.0.3.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.3) |
 
-> 💡 **国内加速提示**：若 GitHub Releases 附件下载缓慢，可复制下载链接，在链接前增加加速前缀（如 `https://ghproxy.cn/`）后重试。
-
----
-
-## ✨ 核心特性
-
-### 1. 🈁 极致歌词系统与日语三层逐字排版
-- **三层逐字对齐**：上振假名（ふりがな）、中原文、下罗马音逐字映射；汉字注音精准对齐，和声、促音、长音智能兼容。
-- **双语 / 三语歌词合并**：同一时间轴自动聚合「原文 + 翻译 + 罗马音」，支持动态卡拉 OK 逐字高亮。
-- **深度手感调教**：聚焦模式放大当前唱句、其余行波浪式淡化；字号、行距（0.8~4.0）、描边粗细与颜色自由定制。
-- **悬浮窗与沉浸阅读**：Windows / Android 专属桌面歌词悬浮窗；全屏沉浸模式下自动淡出冗余控件。
-
-### 2. 💿 视觉与播放美学
-- **黑胶与 3D 封面**：拟真旋转黑胶唱片与唱臂起落动画，或一键切换超大幅专辑封面。
-- **自定义动态壁纸**：支持静态图片与 4K 高帧率视频壁纸，循环平滑过渡无缝衔接。
-- **全透毛玻璃美学**：卡片、背景板、弹窗全局透明度与高斯模糊度均可独立微调。
-- **大屏自适应**：横屏平板模式自动呈现左侧封面控制器、右侧大幅歌词的双栏现代交互。
-
-### 3. 📂 本地与云端音乐管理
-- **大歌单全量接续**：万首超大歌单后台自动翻页拉取，支持全量乱序随机与全局搜索。
-- **本地音频自动刮削**：支持 MP3、FLAC、WAV、OGG、M4A、AAC 等全格式，本地歌曲自动匹配内嵌/同名 `.lrc` 与联网歌词。
-- **状态记忆**：记住上次播放列表、单曲进度与声音设置，启动即接续。
+- **设备兼容**：Android 7.0 及以上可用，手机和平板通用；Lite Music 标准版和风见分支在同一台设备上**只能装一个**。
+- **签名说明**：风见和 Lite Music 正式版签名不同，从 Lite Music 换到风见需要先卸载（本地设置和播放记录会清空，网易云账号里的歌单不受影响）。
+- **更新覆盖**：已装过风见版的直接点开新安装包覆盖安装即可，数据保留；5.16 及以后的风见会在应用内自动提示更新（也可在「设置 › 关于」里手动检查）。
+- **包名区分**：风见的安装包认准 **`Kazami-版本号.apk`**，在标题为「风见 Kazami」的发布里；Lite Music 发布里的文件是 Lite Music 的。
+- **国内加速**：若下载较慢，可复制下载链接，前面加上 `https://ghproxy.cn/`（或 `https://ghproxy.net/`）再打开。
+- **开源性质**：本发布仓库仅提供安装包与更新清单，源码维护于私有开发仓库。
 
 ---
 
-## 📱 iPad / Web 版使用说明
+## 🎵 Lite Music 多端特性
+
+Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提供深度原生与平台级特性支持：
+
+### 💻 1. Windows 桌面端
+- **桌面全局悬浮歌词**：支持置顶、锁定、鼠标穿透、单双行轮播切换与卡拉 OK 逐字变色，办公码字时不遮挡视野。
+- **声屿（Island）灵动岛**：停靠于屏幕顶部的胶囊控制浮窗，悬停展开歌曲封面、当前曲目、播放进度与切歌控制。
+- **Mini 迷你模式**：独立紧凑小窗停靠在屏幕边缘，不占桌面宝贵空间。
+- **全局快捷键与系统托盘**：支持后台全局切歌、静音、红心收藏；关闭窗口可自动最小化到系统托盘常驻后台。
+- **本地全格式音频管理**：支持扫描播放 MP3、FLAC、WAV、OGG 等无损音频，自动匹配同名或内嵌 `.lrc` 歌词。
+
+<div align="center">
+  <img src="assets/windows-preview.jpg" width="95%" alt="Lite Music Windows 桌面端主界面与顶部声屿控制" />
+</div>
+
+---
+
+### 📱 2. Android 移动端
+- **长效后台保活（Foreground Service）**：结合系统媒体通知服务与原生唤醒锁，彻底摆脱切后台即杀与息屏断音。
+- **系统媒体中心卡片**：完全接管系统下拉通知栏与锁屏媒体控制器，支持锁屏大封面展示、上一曲/下一曲、拖拽进度条及快捷收藏。
+- **系统级桌面歌词悬浮窗**：画中画级别全局悬浮窗，在运行其他应用（微信、游戏、浏览器）时随时悬浮展示实时歌词。
+- **全屏全沉浸视口**：状态栏与手势虚拟按键全透明沉浸，智能计算异形屏与挖孔屏避让安全区。
+- **应用内版本检查**：在「设置 › 关于」中一键检测最新 APK，支持直连极速镜像覆盖更新。
+
+<div align="center">
+  <img src="assets/android-preview.jpg" width="42%" alt="Lite Music Android 移动端界面与底部沉浸导航" />
+</div>
+
+---
+
+### 🍎 3. iOS / iPadOS 端（Web PWA）
+- **免证书、免越狱、永不掉签**：基于 Web PWA 标准，通过 iPad / iPhone 自带 Safari 访问同源部署服务，点击“分享 → 添加到主屏幕”立享独立全屏应用体验，彻底告别 7 天免费开发者证书掉签烦恼。
+- **iPadOS 横屏双栏排版**：大屏平板模式下自动激活响应式双栏，左侧大封面控制器、右侧大幅三层逐字歌词，触控与视觉空间充分释放。
+- **安全区（Safe Area）精准避让**：独立全屏模式下毛玻璃底色自然沉底延伸，播放进度与操作按钮自动垫高避让 Home Indicator，上划多任务手势绝不误触播放条。
+- **触屏深度手感调教**：消除 Safari 300ms 触控响应延迟，禁用双击误触缩放，移除点击高亮灰色遮罩，长按与点选对齐原生触控直觉。
+
+> 💡 *（iOS / iPadOS 真机实操与独立视口截图后续补齐）*
+
+---
+
+## 🌸 风见 Kazami 功能一览
+
+风见在 Lite Music 的全部功能之上，重做了视觉、歌词排版和手机 / 平板手感。下面按用途分组列出风见的主要功能。
+
+### 🎨 幽香主题
+
+- **日光花田 / 黄昏花田**：浅色、深色两套暖色调界面，跟随系统自动切换。
+- **向日葵播放键**、透明底向日葵图标。
+- **内置资源圆体**（开箱即用，不用联网下载）；也可以在设置里导入自己的字体（ttf / otf / woff）。
+- **主文字 / 副文字 / 主题色**：浅色、深色主题分别自定义。
+
+### 🈁 日语歌词三层排版
+
+- **上振假名、中原文、下罗马音，逐字对齐**：每个汉字头上标读音，罗马音贴在对应的字下面，跟着歌词一起高亮。
+- **对齐算法专门打磨过**：括号和声「（ラララ）」、长音 ō、促音 kitto、连续汉字「2人」、原文自带的括号注音「夢（ゆめ）」都能对上；实在对不上时整行显示罗马音，不会乱对。
+- **翻译、罗马音、振假名字号分别可调**，跟着主歌词等比缩放。
+- **双语 / 三语歌词自动合并**：同一时间的多行会自动并成「原文 + 罗马音 / 翻译」，本地歌词文件也一样。
+- **逐字卡拉 OK 高亮**可以开关。
+
+### 📖 歌词阅读手感
+
+- **聚焦模式**：当前句放大、其他句淡化，换行时整屏像波浪一样错落滚动；放大倍率、淡化程度都可调。
+- **沉浸歌词**：进入歌词页 1 秒后，按钮、歌名、歌手全部淡出，歌词铺满全屏，当前句停在屏幕视觉中心；手指按住歌词时控件回来，点任意位置（包括歌词）回到封面。可在播放设置里关闭。
+- **滑动歌词跟手**：上下拖动走系统原生滚动，不卡顿；点右侧「▶ 时间」才跳到那一句，不会误触跳进度。
+- **字号、行距（0.8–4.0）可调**；「纯音乐，请欣赏」这类单行歌词居中显示。
+- **手机竖屏左对齐阅读、歌名置顶**；平板显示侧边快捷栏（音 / 译开关、字号、行距）。
+
+### 🖍️ 歌词配色与描边
+
+- **14 套配色预设**：幽香系列 6 套（向日葵花田、红格洋伞、月下花田、四季·春樱、梦幻馆等，各有日光 / 黄昏两版）+ 背景适配 8 套（高对比白字 / 黑字、霓虹、暖金、歌词底板等）。
+- **五种颜色单独自定义**：已唱原文、未唱原文、振假名、罗马音、翻译；歌名、歌手也能单独换色。
+- **描边**：粗细连续可调、深浅单独调、颜色自选；歌名和歌手也跟着描边。复杂壁纸、视频壁纸上也看得清。
+- **统一取色器**：二维色盘 + 色相 + 透明度 + HEX 色号 + 常用色 / 最近用过，所有调颜色的地方都是同一个。
+
+### 💿 播放页
+
+- **黑胶 / 大封面一键切换**：旋转黑胶带唱臂起落动画，或者大幅专辑封面。
+- **封面大小 60%–130% 可调**。
+- **平板横屏双栏**：左边封面和控制，右边大字歌词。
+- **封面页点任意空白处进入歌词**；超长歌名、歌手自动横向滚动。
+- **全面屏沉浸**：内容延伸到状态栏和手势条下面，挖孔屏自动避让。
+
+### 🖼️ 壁纸与透明度
+
+- **图片 / 视频壁纸**：支持 4K 高帧率视频，循环衔接处平滑过渡不闪黑；原图无损保存。
+- **全局透明度与模糊度**：卡片 / 背景板、弹出面板两组分别调，都能调到全透明、0 模糊；搜索栏、底部播放栏、设置页、输入框都跟着变。
+- **透明边框开关**：全透明时给每个框描一圈细边，照样分得清。
+- **「按钮与卡片也透明」开关**、**账号背景透明模式**：让壁纸完整透出来。
+
+### 📂 本地音乐
+
+- **指定文件夹，或一键扫描手机里的全部音乐**；支持 mp3 / flac / wav / ogg / opus / m4a / m4b / aac。
+- **本地歌曲自动找歌词**，依次查找：
+  1. 同名 `.lrc`（和歌曲放在同一文件夹，UTF-8 / GBK 都能认）
+  2. 音频文件自带的歌词（mp3 / flac / m4a，带不带时间戳都行）
+  3. 按歌名 + 歌手 + 时长联网搜索（网易云 → QQ 音乐 → 酷狗），对不上的同名歌不会乱用
+
+  搜到的结果会记住，同一首不再重复搜。
+
+### 🎶 歌单与播放
+
+- **大歌单完整可用**：几千首的歌单也会在后台补全，搜索能搜到每一首，随机播放、播放全部覆盖整个歌单。
+- **记得你听到哪**：重启后恢复上一首、播放列表和进度。
+- **流畅**：平板实测（144Hz 屏、4K 60 帧视频壁纸）整体约 140 帧，歌词滚动全程满帧，视频壁纸 59 帧。
+- **独立更新通道**：只提示风见自己的新版本，不会被 Lite Music 的版本打扰。
+
+---
+
+## 📱 iPad / Web (PWA) 使用说明
 
 针对 iPad 用户与不便安装原生客户端的场景，Lite Music 提供了开箱即用的 Web / PWA 同源部署方案：
 
@@ -63,6 +156,9 @@
 # 构建并启动同源服务（集成接口代理与静态托管）
 pnpm run build:mobile
 pnpm run serve:web
+
+# 可选：配置证书以 HTTPS 启动（保障 iOS 锁屏 MediaSession 媒体卡片完整激活）
+node scripts/serve-web.mjs --ssl-key ./key.pem --ssl-cert ./cert.pem
 ```
 控制台会输出本地及局域网访问地址（如 `http://192.168.x.x:4173`）。
 
@@ -73,29 +169,34 @@ pnpm run serve:web
 
 ---
 
-## 📸 界面预览
+## 📸 风见 Kazami 动态演示与截图
 
 ### 黑胶唱片与三层歌词
+
 <div align="center">
   <img src="assets/kazami-vinyl-120fps.gif" width="100%" alt="黑胶唱片与三层歌词" />
 </div>
 
 ### 黑胶 / 大封面切换
+
 <div align="center">
   <img src="assets/kazami-cover-switch.gif" width="100%" alt="黑胶与大封面切换" />
 </div>
 
-### 中日双语/三层歌词排版
+### 中日双语歌词
+
 <div align="center">
   <img src="assets/kazami-bilingual-sandwich.gif" width="100%" alt="中日双语歌词" />
 </div>
 
-### 平板大屏横屏双栏
+### 平板横屏双栏
+
 <div align="center">
   <img src="assets/kazami-tablet-player.png" width="95%" alt="平板横屏双栏播放页" />
 </div>
 
 ### 发现页与歌单
+
 <div align="center">
   <img src="assets/kazami-discover-home.png" width="49%" alt="发现页" />
   <img src="assets/kazami-playlist-view.png" width="49%" alt="歌单页" />
@@ -103,28 +204,8 @@ pnpm run serve:web
 
 ---
 
-## ❓ 常见问题
-
-<details>
-<summary><b>1. Windows 安装时提示「Windows 已保护你的电脑（SmartScreen）」？</b></summary>
-由于个人开源项目未购买微软昂贵商业代码签名证书，首次运行 Windows 会弹出安全提示。点击<b>「更多信息」→「仍要运行」</b>即可正常安装。
-</details>
-
-<details>
-<summary><b>2. Android 端提示应用内更新失败或覆盖安装报错？</b></summary>
-- 本项目标准签名自 5.16 起已更新加固，若之前安装过非官方签名包或极旧历史版本，需先卸载旧版再安装新版（网易云线上歌单不受影响）。<br/>
-- 覆盖安装时请认准同一版本分支的安装包。
-</details>
-
-<details>
-<summary><b>3. 历史「风见 Kazami」定制版去哪了？</b></summary>
-「风见 Kazami」原为针对东方 Project 幽香主题制作的定制版。自 2026 年 11 月起，为保证主线维护质量与包体精简，风见的歌词多层排版、双栏大屏等核心体验已整合进标准版，后续更新统一发布 Lite Music 标准包（Windows 与 Android），定制包不再单独迭代。历史版本仍可在 Release 归档中找到。
-</details>
-
----
-
 ## 📜 声明与致谢
 
-- 本项目基于开源项目 [AlgerMusicPlayer](https://github.com/algerkong/AlgerMusicPlayer) 二次深度开发与重构，遵循 [MIT 许可证](LICENSE-AlgerMusicPlayer.txt)。
-- 本项目仅供个人学习交流使用，与网易云音乐官方无任何隶属关系。音频版权归各唱片公司及原作者所有，请支持正版音乐。
-- 感谢所有为 Lite Music 提供体验反馈与代码贡献的开发者及用户！
+- Lite Music 基于开源项目 [AlgerMusicPlayer](https://github.com/algerkong/AlgerMusicPlayer) 二次开发，原项目许可见 [LICENSE-AlgerMusicPlayer.txt](LICENSE-AlgerMusicPlayer.txt)。
+- 风见幽香及东方 Project 相关角色版权归上海爱丽丝幻乐团（ZUN）所有，风见 Kazami 仅以同人方式致敬，与官方无关。
+- 本软件是第三方客户端，与网易云音乐官方无隶属关系，仅供学习交流，禁止商用。请多支持正版音乐。
