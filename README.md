@@ -5,7 +5,7 @@
 ### 网易云音乐第三方客户端 · 极简轻快 / 日语歌词三层逐字对齐 · 电脑 / 手机 / 平板 / Web
 
 [![Release](https://img.shields.io/github/v/release/TerryYu12/lite-music-releases?label=Lite%20Music&color=60a5fa&style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/latest)
-[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.1.2-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.2)
+[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.1.3-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.3)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20iOS%20PWA-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
 
 <p>
@@ -27,7 +27,7 @@
 | 💻 **Lite Music** | Windows x64 | 电脑端：桌面悬浮歌词、声屿灵动控制、Mini 迷你模式、全局快捷键、无损播放 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
 | 📱 **Lite Music** | Android | 移动端：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词 | [⬇️ 最新安装包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
 | 🍎 **Lite Music** | iPad / Web (PWA) | 免安装：下载免编译绿色包解压即跑、大屏横屏双栏排版、Safari 添加至主屏幕独立全屏 | [⬇️ 最新 Web 绿色包 (.zip)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 部署说明](#-ipad--web-pwa-使用说明) |
-| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页；网易云 / QQ 音乐 / 酷狗账号同步 | [⬇️ Kazami-6.1.2.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.2/Kazami-6.1.2.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.2) |
+| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页；网易云 / QQ 音乐 / 酷狗账号同步 | [⬇️ Kazami-6.1.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.3/Kazami-6.1.3.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.3) |
 
 - **设备兼容**：Android 7.0 及以上可用，手机和平板通用；Lite Music 标准版和风见分支在同一台设备上**只能装一个**。
 - **签名说明**：风见和 Lite Music 正式版签名不同，从 Lite Music 换到风见需要先卸载（本地设置和播放记录会清空，网易云账号里的歌单不受影响）。
@@ -82,7 +82,7 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 
 风见在 Lite Music 的全部功能之上，重做了视觉、歌词排版和手机 / 平板手感。下面按用途分组列出风见的主要功能。
 
-> 🌻 **最新版 6.1.2 · 6.x 亮点**　[⬇️ 下载 Kazami-6.1.2.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.2/Kazami-6.1.2.apk)
+> 🌻 **最新版 6.1.3 · 6.x 亮点**　[⬇️ 下载 Kazami-6.1.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.3/Kazami-6.1.3.apk)
 >
 > - **多平台账号同步**：网易云、QQ 音乐、酷狗、酷狗概念版都能登录，个人歌单、我喜欢、听歌记录跟着账号走（详见下方「账号登录与同步」）。
 > - **卡拉 OK 整字点亮**：唱到的字缓缓亮起、轻轻上浮，背后柔光淡入；长音上绽放一圈向日葵花瓣光环。
