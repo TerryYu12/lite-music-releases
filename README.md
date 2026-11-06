@@ -5,7 +5,7 @@
 ### 网易云音乐第三方客户端 · 极简轻快 / 日语歌词三层逐字对齐 · 电脑 / 手机 / 平板 / Web
 
 [![Release](https://img.shields.io/github/v/release/TerryYu12/lite-music-releases?label=Lite%20Music&color=60a5fa&style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/latest)
-[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.0.3-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.3)
+[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.1.2-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.2)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20iOS%20PWA-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
 
 <p>
@@ -27,7 +27,7 @@
 | 💻 **Lite Music** | Windows x64 | 电脑端：桌面悬浮歌词、声屿灵动控制、Mini 迷你模式、全局快捷键、无损播放 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
 | 📱 **Lite Music** | Android | 移动端：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词 | [⬇️ 最新安装包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
 | 🍎 **Lite Music** | iPad / Web (PWA) | 免安装：下载免编译绿色包解压即跑、大屏横屏双栏排版、Safari 添加至主屏幕独立全屏 | [⬇️ 最新 Web 绿色包 (.zip)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 部署说明](#-ipad--web-pwa-使用说明) |
-| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页 | [⬇️ Kazami-6.0.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.0.3/Kazami-6.0.3.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.3) |
+| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页；网易云 / QQ 音乐 / 酷狗账号同步 | [⬇️ Kazami-6.1.2.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.2/Kazami-6.1.2.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.2) |
 
 - **设备兼容**：Android 7.0 及以上可用，手机和平板通用；Lite Music 标准版和风见分支在同一台设备上**只能装一个**。
 - **签名说明**：风见和 Lite Music 正式版签名不同，从 Lite Music 换到风见需要先卸载（本地设置和播放记录会清空，网易云账号里的歌单不受影响）。
@@ -82,6 +82,29 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 
 风见在 Lite Music 的全部功能之上，重做了视觉、歌词排版和手机 / 平板手感。下面按用途分组列出风见的主要功能。
 
+> 🌻 **最新版 6.1.2 · 6.x 亮点**　[⬇️ 下载 Kazami-6.1.2.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.2/Kazami-6.1.2.apk)
+>
+> - **多平台账号同步**：网易云、QQ 音乐、酷狗、酷狗概念版都能登录，个人歌单、我喜欢、听歌记录跟着账号走（详见下方「账号登录与同步」）。
+> - **卡拉 OK 整字点亮**：唱到的字缓缓亮起、轻轻上浮，背后柔光淡入；长音上绽放一圈向日葵花瓣光环。
+> - **封面动态取色 / 跟随壁纸取色**：歌名、歌手和全部歌词颜色从专辑封面取，主题色从壁纸取，换歌换壁纸自动跟着变。
+> - **换行更顺**：平板 144Hz 实测，逐字歌词换行时的帧数提高到原来的两倍多；歌词只渲染屏幕附近的行，长歌词、三层歌词也不吃力。
+> - **低配设备模式**：车机、老款手机一键减负，开启后各项仍可单独调回，关闭即恢复原设置。
+> - **新装更好看**：默认歌词字号加大 50%，沉浸歌词、聚焦当前行、三层歌词开箱即用。
+
+### 🔗 账号登录与同步
+
+账号凭证只保存在本机，不会上传到任何第三方。
+
+| 平台 | 登录方式 | 同步内容 |
+| :--- | :--- | :--- |
+| **网易云音乐** | 扫码 / 验证码 | 歌单、红心、每日推荐；听歌记录与听歌时长上传到网易云，计入听歌排行 |
+| **QQ 音乐** | 网页登录 / 粘贴 Cookie | 个人歌单；「我喜欢」双向同步（在风见里点红心会写回 QQ 音乐）；播放记录上报到 QQ 音乐「最近播放」 |
+| **酷狗音乐** | 酷狗 App 扫码（一次即可） | 个人歌单（我喜欢 / 自建 / 收藏）；会员歌、看广告免费听的歌可播 |
+| **酷狗概念版** | 概念版 App 扫码 | 独立账号与个人歌单；概念版领取的免费 VIP 在风见里生效 |
+| **酷我音乐** | 免登录 | 搜索、播放、歌单与评论（只读） |
+
+- 几个平台可以同时登录，「我的」页面切换展示哪个平台的身份和歌单；酷狗标准版取不到播放链接时会自动用概念版再试。
+
 ### 🎨 幽香主题
 
 - **日光花田 / 黄昏花田**：浅色、深色两套暖色调界面，跟随系统自动切换。
@@ -95,7 +118,7 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 - **对齐算法专门打磨过**：括号和声「（ラララ）」、长音 ō、促音 kitto、连续汉字「2人」、原文自带的括号注音「夢（ゆめ）」都能对上；实在对不上时整行显示罗马音，不会乱对。
 - **翻译、罗马音、振假名字号分别可调**，跟着主歌词等比缩放。
 - **双语 / 三语歌词自动合并**：同一时间的多行会自动并成「原文 + 罗马音 / 翻译」，本地歌词文件也一样。
-- **逐字卡拉 OK 高亮**可以开关。
+- **逐字卡拉 OK**可以开关：唱到的字整字点亮、轻轻上浮，长音上有向日葵花瓣光环；翻译整行跟着当前句高亮。
 
 ### 📖 歌词阅读手感
 
@@ -141,7 +164,8 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 
 - **大歌单完整可用**：几千首的歌单也会在后台补全，搜索能搜到每一首，随机播放、播放全部覆盖整个歌单。
 - **记得你听到哪**：重启后恢复上一首、播放列表和进度。
-- **流畅**：平板实测（144Hz 屏、4K 60 帧视频壁纸）整体约 140 帧，歌词滚动全程满帧，视频壁纸 59 帧。
+- **流畅**：平板实测（144Hz 屏、4K 60 帧视频壁纸）整体约 140 帧，视频壁纸 59 帧；逐字歌词换行时 1.25 秒内约 115–150 帧，普通歌词换行接近满帧。个别设备上逐字滚动卡顿时，可把系统屏幕刷新率调到 60Hz。
+- **低配设备模式**（设置 › 外观）：给车机、老款处理器用，关掉毛玻璃、歌词模糊和描边，逐字歌词只保留变色；各项仍可单独打开，关闭即恢复开启前的设置。
 - **独立更新通道**：只提示风见自己的新版本，不会被 Lite Music 的版本打扰。
 
 ---
