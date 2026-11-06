@@ -1,8 +1,8 @@
 {
-  "version": "5.17.2",
-  "publishedAt": "2026-11-05T15:02:38.351Z",
-  "notes": "### ⚠️ 升级须知\n\n- Android 版更换了签名密钥：之前装过任何版本的设备都无法应用内更新，需要先卸载旧版再手动安装（仅此一次）。卸载会清除本机设置和各平台登录状态，安装后需重新登录\n- 5.17.1 未单独发布，其修复（QQ 音乐登录过期识别、外部曲目受限时先询问换源）随本版一起发布，详见下方 v5.17.1 小节\n\n### 🐛 Bug 修复\n\n- Android 重启后上一首、播放列表和进度全部丢失：`main.ts` 在 `app.use(pinia)` 之前导入的手机端服务会提前创建 player / playerCore / playlist 等 store，而 pinia 在此之前注册的插件只会排队，这些 store 拿不到持久化插件，从未落盘。现在建好 pinia 后立即激活插件（移植自风见 Kazami 分支）\n- 大歌单只能搜到、播到已加载的前 200 首左右：进入歌单后后台分批补全整个歌单；搜索时立即补全；「播放全部」和点歌播放先用已加载部分开播，补全后在队列未被替换的前提下换成完整歌单，不打断当前曲目；换歌单时作废上一份补全（移植自风见 Kazami 分支）\n- 罗马音逐字对齐乱对：重写对齐算法，兼容按单词给出的罗马音、促音、长音 ō，连续汉字整组标注，识别原文括号注音，正文与括号和声分段对齐；完全对不上时整行显示罗马音，不再硬套。新增回归测试 `scripts/test-lyric-align.ts`（22 条）（移植自风见 Kazami 分支）\n\n### ⚡ 性能\n\n- 跑马灯改用 Web Animations 写死像素值：原先关键帧依赖 CSS 变量，Android WebView 只能在主线程逐帧计算样式\n- 全屏播放页打开时，被隐藏的底部播放栏进度条不再每 50ms 刷新",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.17.2",
+  "version": "5.18.0",
+  "publishedAt": "2026-11-06T09:49:44.127Z",
+  "notes": "### ✨ 新功能\n\n- Android 本地歌曲歌词支持三级链路：同目录同名 `.lrc` / `.LRC`（支持 UTF-8 与 GB18030 编码自动识别）优先，音频标签内嵌歌词兜底（支持 MP3 USLT/SYLT/TXXX、FLAC Vorbis LYRICS、MP4 ©lyr），无内嵌歌词自动按歌名歌手时长联网聚合匹配（网易云 → QQ 音乐 → 酷狗），匹配结果存入本地缓存避免重复搜索（移植自风见 Kazami 分支）\n- 外部歌单（QQ / 酷狗 / 酷我）翻页与后台补全：改用独立游标计数，彻底消除去重引起的页码回退与死循环；进入歌单后后台以 250ms 间隔平滑补全；支持“先播后补”队列接续，起播立即出声并在补全后平滑扩充队列；引入 60 行/帧分帧挂载，保证千首大歌单流畅滚动（移植自风见 Kazami 分支）\n\n### 🐛 Bug 修复\n\n- 本地歌曲十六进制 id 串歌词：桌面端与 Android 端统一识别本地曲目特征，彻底拦截将十六进制 hash 当作网易云数字 id 请求歌词的错误行为，避免本地歌曲拉到无关在线歌词",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.18.0",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,16 +12,22 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.17.2.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.17.2/LiteMusic-Setup-5.17.2.exe",
-    "size": 120808033,
-    "sha256": "067ee7b372a056d997b8e19964e26b3c64d7cd0a4d06dbc03d75c88831edbc00"
+    "name": "LiteMusic-Setup-5.18.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.0/LiteMusic-Setup-5.18.0.exe",
+    "size": 120821964,
+    "sha256": "478b107cc68fb5442bf563483d9ba1900d5b63797e60ab0a78f43ee88d7aba04"
   },
   "android": {
-    "name": "LiteMusic-5.17.2.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.17.2/LiteMusic-5.17.2.apk",
-    "size": 7461899,
-    "sha256": "786396aea48756f724a90de306366af0ff541251d603072bcbb899e4383a4bda",
-    "versionCode": 5017002
+    "name": "LiteMusic-5.18.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.0/LiteMusic-5.18.0.apk",
+    "size": 7473710,
+    "sha256": "b756dd48743badcb26984744cecaac610488352dc6d798ce32d40a221660028b",
+    "versionCode": 5018000
+  },
+  "web": {
+    "name": "lite-music-web-5.18.0.zip",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.0/lite-music-web-5.18.0.zip",
+    "size": 3756676,
+    "sha256": "10af99d282c8a5e01ccb10b5253f622b13ff869185731e88f54a8c899a76675f"
   }
 }
