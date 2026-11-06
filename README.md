@@ -5,7 +5,7 @@
 ### 网易云音乐第三方客户端 · 极简轻快 / 日语歌词三层逐字对齐 · 电脑 / 手机 / 平板 / Web
 
 [![Release](https://img.shields.io/github/v/release/TerryYu12/lite-music-releases?label=Lite%20Music&color=60a5fa&style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/latest)
-[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.1.2-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.2)
+[![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.0.3-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.3)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20iOS%20PWA-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
 
 <p>
@@ -26,8 +26,8 @@
 | :--- | :--- | :--- | :--- |
 | 💻 **Lite Music** | Windows x64 | 电脑端：桌面悬浮歌词、声屿灵动控制、Mini 迷你模式、全局快捷键、无损播放 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
 | 📱 **Lite Music** | Android | 移动端：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词 | [⬇️ 最新安装包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
-| 🍎 **Lite Music** | iPad / Web (PWA) | 免安装：Safari 一键添加到主屏幕独立全屏运行、大屏横屏双栏排版、触屏深度优化 | [📖 启动与使用指南](#-ipad--web-pwa-使用说明) |
-| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页 | [⬇️ Kazami-6.1.2.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.2/Kazami-6.1.2.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.2) |
+| 🍎 **Lite Music** | iPad / Web (PWA) | 免安装：下载免编译绿色包解压即跑、大屏横屏双栏排版、Safari 添加至主屏幕独立全屏 | [⬇️ 最新 Web 绿色包 (.zip)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 部署说明](#-ipad--web-pwa-使用说明) |
+| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页 | [⬇️ Kazami-6.0.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.0.3/Kazami-6.0.3.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.0.3) |
 
 - **设备兼容**：Android 7.0 及以上可用，手机和平板通用；Lite Music 标准版和风见分支在同一台设备上**只能装一个**。
 - **签名说明**：风见和 Lite Music 正式版签名不同，从 Lite Music 换到风见需要先卸载（本地设置和播放记录会清空，网易云账号里的歌单不受影响）。
@@ -82,15 +82,6 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 
 风见在 Lite Music 的全部功能之上，重做了视觉、歌词排版和手机 / 平板手感。下面按用途分组列出风见的主要功能。
 
-> 🌻 **最新版 6.1.2 · 6.x 亮点**　[⬇️ 下载 Kazami-6.1.2.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.2/Kazami-6.1.2.apk)
->
-> - **卡拉 OK 整字点亮**：唱到的字缓缓亮起、轻轻上浮，背后柔光淡入；长音上绽放一圈向日葵花瓣光环。
-> - **封面动态取色 / 跟随壁纸取色**：歌名、歌手和全部歌词颜色从专辑封面取，主题色从壁纸取，换歌换壁纸自动跟着变。
-> - **换行更顺**：平板 144Hz 实测，逐字歌词换行时的帧数提高到原来的两倍多；歌词只渲染屏幕附近的行，长歌词、三层歌词也不吃力。
-> - **低配设备模式**：车机、老款手机一键减负，开启后各项仍可单独调回，关闭即恢复原设置。
-> - **更多音源**：接入 QQ 音乐、酷狗（含概念版）、酷我，歌单打开后一次加载完整，评论统一显示。
-> - **新装更好看**：默认歌词字号加大 50%，沉浸歌词、聚焦当前行、三层歌词开箱即用。
-
 ### 🎨 幽香主题
 
 - **日光花田 / 黄昏花田**：浅色、深色两套暖色调界面，跟随系统自动切换。
@@ -104,7 +95,7 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 - **对齐算法专门打磨过**：括号和声「（ラララ）」、长音 ō、促音 kitto、连续汉字「2人」、原文自带的括号注音「夢（ゆめ）」都能对上；实在对不上时整行显示罗马音，不会乱对。
 - **翻译、罗马音、振假名字号分别可调**，跟着主歌词等比缩放。
 - **双语 / 三语歌词自动合并**：同一时间的多行会自动并成「原文 + 罗马音 / 翻译」，本地歌词文件也一样。
-- **逐字卡拉 OK**可以开关：唱到的字整字点亮、轻轻上浮，长音上有向日葵花瓣光环；翻译整行跟着当前句高亮。
+- **逐字卡拉 OK 高亮**可以开关。
 
 ### 📖 歌词阅读手感
 
@@ -150,32 +141,48 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 
 - **大歌单完整可用**：几千首的歌单也会在后台补全，搜索能搜到每一首，随机播放、播放全部覆盖整个歌单。
 - **记得你听到哪**：重启后恢复上一首、播放列表和进度。
-- **流畅**：平板实测（144Hz 屏、4K 60 帧视频壁纸）整体约 140 帧，视频壁纸 59 帧；逐字歌词换行时 1.25 秒内约 115–150 帧，普通歌词换行接近满帧。个别设备上逐字滚动卡顿时，可把系统屏幕刷新率调到 60Hz。
-- **低配设备模式**（设置 › 外观）：给车机、老款处理器用，关掉毛玻璃、歌词模糊和描边，逐字歌词只保留变色；各项仍可单独打开，关闭即恢复开启前的设置。
+- **流畅**：平板实测（144Hz 屏、4K 60 帧视频壁纸）整体约 140 帧，歌词滚动全程满帧，视频壁纸 59 帧。
 - **独立更新通道**：只提示风见自己的新版本，不会被 Lite Music 的版本打扰。
 
 ---
 
 ## 📱 iPad / Web (PWA) 使用说明
 
-针对 iPad 用户与不便安装原生客户端的场景，Lite Music 提供了开箱即用的 Web / PWA 同源部署方案：
+针对 iPad 用户与偏好局域网/NAS 私有部署的场景，Lite Music 提供开箱即用的**免编译 Web 绿色服务包**（无需拉取源码，无需配置开发环境，解压即跑）：
 
-### 1. 启动服务（局域网 / 个人服务器）
-在电脑或 NAS 上拉取本项目后运行：
+### 1. 启动服务（电脑 / NAS / 服务器）
+
+1. 前往 [Releases 最新发布页](https://github.com/TerryYu12/lite-music-releases/releases/latest) 下载预构建的 **`lite-music-web.zip`**；
+2. 解压到任意目录，选择以下任意一种方式启动：
+
+#### 方式 A：双击启动（Windows / 桌面端）
+直接双击运行解压目录下的 **`start.bat`**。
+
+#### 方式 B：终端启动（Linux / macOS / NAS）
+解压目录下运行：
 ```bash
-# 构建并启动同源服务（集成接口代理与静态托管）
-pnpm run build:mobile
-pnpm run serve:web
+node server.mjs
 
-# 可选：配置证书以 HTTPS 启动（保障 iOS 锁屏 MediaSession 媒体卡片完整激活）
-node scripts/serve-web.mjs --ssl-key ./key.pem --ssl-cert ./cert.pem
+# 可选：指定端口或配置 HTTPS 证书（保障 iOS 锁屏 MediaSession 媒体卡片完整激活）
+node server.mjs --port 4173 --ssl-key ./key.pem --ssl-cert ./cert.pem
 ```
-控制台会输出本地及局域网访问地址（如 `http://192.168.x.x:4173`）。
+
+#### 方式 C：Docker 容器化部署（群晖 / QNAP / Unraid / 服务器）
+解压目录下运行：
+```bash
+docker compose up -d
+```
+
+控制台会输出局域网访问地址（如 `http://192.168.x.x:4173`）。
+
+---
 
 ### 2. iPad Safari 添加至主屏幕
-1. 用 iPad 上的 **Safari 浏览器** 打开上述局域网地址；
-2. 点击 Safari 分享按钮，选择 **“添加到主屏幕”**；
-3. 从桌面图标启动，即可享受**无地址栏、无底栏的纯净独立全屏体验**，自动适配 iPad 大屏双栏排版与触屏手势。
+
+1. 确保 iPad 与运行服务的设备处于**同一局域网（同一 Wi-Fi）**；
+2. 用 iPad 上的 **Safari 浏览器** 打开控制台输出的局域网地址；
+3. 点击 Safari 顶部的分享按钮，选择 **“添加到主屏幕”**；
+4. 从桌面图标启动，即可享受**无地址栏、无底栏的纯净独立全屏体验**，自动适配 iPad 大屏双栏排版与触屏手势。
 
 ---
 
