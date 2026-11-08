@@ -1,8 +1,8 @@
 {
-  "version": "5.18.0",
-  "publishedAt": "2026-11-06T09:49:44.127Z",
-  "notes": "### ✨ 新功能\n\n- Android 本地歌曲歌词支持三级链路：同目录同名 `.lrc` / `.LRC`（支持 UTF-8 与 GB18030 编码自动识别）优先，音频标签内嵌歌词兜底（支持 MP3 USLT/SYLT/TXXX、FLAC Vorbis LYRICS、MP4 ©lyr），无内嵌歌词自动按歌名歌手时长联网聚合匹配（网易云 → QQ 音乐 → 酷狗），匹配结果存入本地缓存避免重复搜索（移植自风见 Kazami 分支）\n- 外部歌单（QQ / 酷狗 / 酷我）翻页与后台补全：改用独立游标计数，彻底消除去重引起的页码回退与死循环；进入歌单后后台以 250ms 间隔平滑补全；支持“先播后补”队列接续，起播立即出声并在补全后平滑扩充队列；引入 60 行/帧分帧挂载，保证千首大歌单流畅滚动（移植自风见 Kazami 分支）\n\n### 🐛 Bug 修复\n\n- 本地歌曲十六进制 id 串歌词：桌面端与 Android 端统一识别本地曲目特征，彻底拦截将十六进制 hash 当作网易云数字 id 请求歌词的错误行为，避免本地歌曲拉到无关在线歌词",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.18.0",
+  "version": "5.18.1",
+  "publishedAt": "2026-11-08T08:33:21.076Z",
+  "notes": "### ✨ 新功能\n\n- 网易云红心「心动模式」：喜欢列表支持开启心动模式（智能推荐接续），打造源源不断的个性化听歌流\n- 网易云等级经验看板与听歌打卡：新增等级打卡详情面板与有效听歌过滤规则，足迹内核升级并支持多端播放历史合并\n- 酷狗音乐 App 扫码登录：支持移动端扫码安全登录与自建歌单无损解析\n- 免编译 Web / PWA 绿色服务包与容器化：支持一键运行单文件 Web 绿色免编译包，提供 Docker 镜像与 iOS PWA 全屏锁屏适配，发布工作流全面接入 Web 构建\n\n### 🐛 Bug 修复\n\n- 歌词走字引擎与死锁定位修复：重构走字引擎 DOM 寻址，解决罗马音开关分流判定导致的逐字卡顿与高频跳动，消除全屏歌词死锁定位与走字频闪\n- 罗马音多语言与字符集健壮性：修复非日文语言罗马音误对齐漏洞与拉丁扩展字符撕裂问题\n- 资料卡与播放底栏排版：精简全平台歌曲资料卡高度，优化搜索歌手直达卡与桌面端/移动端底栏空间利用率",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.18.1",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,22 +12,22 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.18.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.0/LiteMusic-Setup-5.18.0.exe",
-    "size": 120821964,
-    "sha256": "478b107cc68fb5442bf563483d9ba1900d5b63797e60ab0a78f43ee88d7aba04"
+    "name": "LiteMusic-Setup-5.18.1.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.1/LiteMusic-Setup-5.18.1.exe",
+    "size": 120834205,
+    "sha256": "276c8fdc099f986493c2bdd1ee1c0a9085ab1bf5ab9fe7c6d5f4686e6acf2d7f"
   },
   "android": {
-    "name": "LiteMusic-5.18.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.0/LiteMusic-5.18.0.apk",
-    "size": 7473710,
-    "sha256": "b756dd48743badcb26984744cecaac610488352dc6d798ce32d40a221660028b",
-    "versionCode": 5018000
+    "name": "LiteMusic-5.18.1.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.1/LiteMusic-5.18.1.apk",
+    "size": 7478699,
+    "sha256": "7f259cf6b97f767e48e240dd169740efa650cd5c2d7a094b875d786771fe20a7",
+    "versionCode": 5018001
   },
   "web": {
-    "name": "lite-music-web-5.18.0.zip",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.0/lite-music-web-5.18.0.zip",
-    "size": 3756676,
-    "sha256": "10af99d282c8a5e01ccb10b5253f622b13ff869185731e88f54a8c899a76675f"
+    "name": "lite-music-web-5.18.1.zip",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.18.1/lite-music-web-5.18.1.zip",
+    "size": 3761245,
+    "sha256": "0c0655910196042b4d19c2418f3491775ac199a5f787ab8e2e10c8acee625375"
   }
 }
