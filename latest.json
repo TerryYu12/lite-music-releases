@@ -1,8 +1,8 @@
 {
-  "version": "5.19.0",
-  "publishedAt": "2026-11-12T10:20:12.254Z",
-  "notes": "### ✨ 新功能\n\n- Android 鸿蒙 / EMUI 白名单版：新增针对 HarmonyOS 4.x / EMUI 系统播控中心白名单机制定制的白名单版安装包，完美支持华为平板与手机下拉控制中心与锁屏播控大卡片及按键双向联动\n- Android 双版本打包与发布自动化：构建与发布流程支持一键原子产出标准版（`LiteMusic-${version}.apk`）与白名单版（`LiteMusic-${version}-harmony.apk`），发布清单与 Release 资产全面接入双版本\n- 应用内更新通道隔离与自适应：客户端自动识别当前安装包名通道，白名单版严格只匹配升级白名单版资产，标准版严格只匹配升级标准版资产，彻底杜绝包名不匹配导致升级失败\n- Android 版本选择指南：文档补齐《Android 版本选择指南（标准版 vs 白名单版）》，详细说明选用场景、纯血鸿蒙限制与更新规则",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.19.0",
+  "version": "5.19.1",
+  "publishedAt": "2026-11-12T13:02:15.712Z",
+  "notes": "### 🐛 Bug 修复\n\n- 纯歌词（普通 LRC）平滑擦色修复：解决开启逐字卡拉OK后无 YRC 数据的普通 LRC 歌词进度卡死在 0% 无法平滑擦色的问题，120 FPS 渲染引擎全面接管普通 LRC 进度驱动\n- Android / 鸿蒙平板模式横屏全屏支持：补充 `android:resizeableActivity=\"true\"`、`<supports-screens>` 与 wide-aspect 屏显配置，彻底消除华为 MatePad 等平板横屏启动黑边/平行视界问题，并在平板顶栏与全屏歌词页新增全屏切换支持",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.19.1",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,37 +12,35 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.19.0.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.0/LiteMusic-Setup-5.19.0.exe",
-    "size": 120894138,
-    "sha256": "87df29492bca830ca8d9a8f631656de44a54367aecc604bde6dde5dfe99c6f90"
+    "name": "LiteMusic-Setup-5.19.1.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/LiteMusic-Setup-5.19.1.exe",
+    "size": 132826614,
+    "sha256": "0d21c1ef683188f0e70ef856678ec4a7d31a3a75cfad8152269ee3ba7dc89f9b"
   },
   "android": {
-    "name": "LiteMusic-5.19.0.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.0/LiteMusic-5.19.0.apk",
-    "size": 7504739,
-    "sha256": "4d5b96672d02f21971d937a18dd5b61a10013ce4f810c5289f907a2dd9ba1a42",
-    "versionCode": 5019000
+    "name": "LiteMusic-5.19.1.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/LiteMusic-5.19.1.apk",
+    "size": 7502694,
+    "sha256": "02784b8f7ab4b998fdd80b64458df25c45688de340b646aaab49c1b43673ce75",
+    "versionCode": 5019001
   },
   "androidHarmony": {
-    "name": "LiteMusic-5.19.0-harmony.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.0/LiteMusic-5.19.0-harmony.apk",
-    "size": 7504747,
-    "sha256": "4e0460758a7b67b196752aab1923a2acd1e00cf1237c8a13c3f80526e4beae71",
-    "versionCode": 5019000
+    "name": "LiteMusic-5.19.1-harmony.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/LiteMusic-5.19.1-harmony.apk",
+    "size": 7502710,
+    "sha256": "079b13aa04c18a22ce7a4f6484536307aad974cff6bcac6fb3c81fef4e04fc19",
+    "versionCode": 5019001
   },
   "androidKazami": {
     "name": "Kazami-6.1.3.apk",
-    "version": "6.1.3",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.0/Kazami-6.1.3.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/Kazami-6.1.3.apk",
     "size": 17920351,
-    "sha256": "ccf286782267e0b34f894ffd17fbf4c30c91dc4c6f1604b67fddcd012eee2bd5",
-    "versionCode": 6001003
+    "sha256": "ccf286782267e0b34f894ffd17fbf4c30c91dc4c6f1604b67fddcd012eee2bd5"
   },
   "web": {
-    "name": "lite-music-web-5.19.0.zip",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.0/lite-music-web-5.19.0.zip",
-    "size": 3787487,
-    "sha256": "daafa2fee6fe71100c6c623ce0bafb96fe33a7851a033359b53a0d128905cbdb"
+    "name": "lite-music-web-5.19.1.zip",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/lite-music-web-5.19.1.zip",
+    "size": 3784956,
+    "sha256": "a3d4d71a4dba4b53e07f6b5492d546c34be8f6fb325a6eebf7954f474ccb7be3"
   }
 }
