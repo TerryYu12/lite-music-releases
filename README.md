@@ -6,7 +6,7 @@
 
 [![Release](https://img.shields.io/github/v/release/TerryYu12/lite-music-releases?label=Lite%20Music&color=60a5fa&style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/latest)
 [![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.1.3-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.3)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20iOS%20PWA-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20HarmonyOS%20%7C%20iOS%20PWA-34d399?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases)
 
 <p>
   <b>让听歌重回纯净、轻快与沉浸。</b><br/>
@@ -14,7 +14,7 @@
   <b>风见 Kazami</b> 是其专为东方 Project「风见幽香」定制的主题分支，专门打磨日语歌的三层逐字歌词阅读手感。
 </p>
 
-[📥 下载与安装](#-下载与安装) · [🎵 Lite Music 多端特性](#-lite-music-多端特性) · [🌸 风见 Kazami 功能一览](#-风见-kazami-功能一览) · [📱 iPad / Web (PWA) 说明](#-ipad--web-pwa-使用说明) · [📸 风见动态演示与截图](#-风见-kazami-动态演示与截图) · [📜 声明与致谢](#-声明与致谢)
+[📥 下载与安装](#-下载与安装) · [🌺 鸿蒙版说明](#-鸿蒙白名单版适用说明什么时候用它) · [🎵 Lite Music 多端特性](#-lite-music-多端特性) · [🌸 风见 Kazami 功能一览](#-风见-kazami-功能一览) · [📱 iPad / Web (PWA) 说明](#-ipad--web-pwa-使用说明) · [📸 风见动态演示与截图](#-风见-kazami-动态演示与截图) · [📜 声明与致谢](#-声明与致谢)
 
 </div>
 
@@ -25,16 +25,31 @@
 | 版本 | 平台 | 适合谁 / 特性亮点 | 下载入口 |
 | :--- | :--- | :--- | :--- |
 | 💻 **Lite Music** | Windows x64 | 电脑端：桌面悬浮歌词、声屿灵动控制、Mini 迷你模式、全局快捷键、无损播放 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
-| 📱 **Lite Music** | Android | 移动端：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词 | [⬇️ 最新安装包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
+| 📱 **Lite Music（标准版）** | Android | 通用推荐（小米 / OPPO / vivo / 三星 / 原生安卓等手机与平板）：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词 | [⬇️ 最新标准包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
+| 🌺 **Lite Music（鸿蒙版）** | HarmonyOS 4.x / EMUI | 华为手机与华为平板专供：突破鸿蒙播控中心白名单限制，支持下拉控制中心与锁屏大卡片常驻及双向切歌联动 | [⬇️ 最新鸿蒙包 (-harmony.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 适用说明](#-鸿蒙白名单版适用说明什么时候用它) |
 | 🍎 **Lite Music** | iPad / Web (PWA) | 免安装：下载免编译绿色包解压即跑、大屏横屏双栏排版、Safari 添加至主屏幕独立全屏 | [⬇️ 最新 Web 绿色包 (.zip)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 部署说明](#-ipad--web-pwa-使用说明) |
 | 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页；网易云 / QQ 音乐 / 酷狗账号同步 | [⬇️ Kazami-6.1.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.3/Kazami-6.1.3.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.3) |
 
-- **设备兼容**：Android 7.0 及以上可用，手机和平板通用；Lite Music 标准版和风见分支在同一台设备上**只能装一个**。
-- **签名说明**：风见和 Lite Music 正式版签名不同，从 Lite Music 换到风见需要先卸载（本地设置和播放记录会清空，网易云账号里的歌单不受影响）。
-- **更新覆盖**：已装过风见版的直接点开新安装包覆盖安装即可，数据保留；5.16 及以后的风见会在应用内自动提示更新（也可在「设置 › 关于」里手动检查）。
-- **包名区分**：风见的安装包认准 **`Kazami-版本号.apk`**，在标题为「风见 Kazami」的发布里；Lite Music 发布里的文件是 Lite Music 的。
+- **设备兼容**：Android 7.0 及以上可用，手机和平板通用。
+- **安装包文件名区分**：
+  - **`LiteMusic-版本号.apk`**：Lite Music 安卓**标准版**（绝大多数安卓设备装这个）。
+  - **`LiteMusic-版本号-harmony.apk`**：Lite Music **鸿蒙白名单特供版**（华为手机 / 华为平板装这个）。
+  - **`Kazami-版本号.apk`**：**风见 Kazami** 主题分支版。
+- **签名与共存说明**：风见和 Lite Music 签名不同；标准版与鸿蒙版包名不同。从标准版、鸿蒙版、风见版之间互相切换时，建议先卸载旧版本（本地设置和播放记录会清空，网易云等平台账号里的歌单不受影响）。
+- **更新覆盖**：已安装任意版本的用户，下载同分支新安装包直接覆盖安装即可保留数据；应用内「设置 › 关于」检查更新会**自动按当前安装的分支（标准版 / 鸿蒙版 / 风见版）匹配对应通道**，不会交叉误推。
 - **国内加速**：若下载较慢，可复制下载链接，前面加上 `https://ghproxy.cn/`（或 `https://ghproxy.net/`）再打开。
 - **开源性质**：本发布仓库仅提供安装包与更新清单，源码维护于私有开发仓库。
+
+### 🌺 鸿蒙白名单版适用说明（什么时候用它？）
+
+1. **为什么有这个版本**：
+   华为 HarmonyOS 4.x 及 EMUI 对下拉「控制中心音频播控卡片」与锁屏大卡片设有系统级包名白名单校验。非白名单应用即使接入标准 `MediaSession`，也只会缩在普通通知栏里，进不了控制中心右上角的播控大卡片。鸿蒙版将底层包名伪装为系统白名单内的 `cn.kuwo.player`（酷我音乐），直接激活华为手机与华为平板控制中心及锁屏的原生播控大卡片，支持封面显示、歌名同步、进度条拖拽与上一曲/下一曲控制。
+2. **什么时候该选它（适用范围）**：
+   - **选鸿蒙版（`LiteMusic-x.y.z-harmony.apk`）**：你的设备是**华为手机或华为平板（运行 HarmonyOS 2.0 ~ 4.x 或 EMUI）**，并且希望在下拉控制中心音频卡片和锁屏界面直接切歌、看封面。
+   - **选标准版（`LiteMusic-x.y.z.apk`）**：你用的是小米、OPPO、vivo、一加、荣耀（MagicOS）、三星、联想、原生 Android 等非华为设备，它们本身遵循标准 Android `MediaSession` 规范，装标准版即可正常使用系统媒体卡片，无需装鸿蒙版。
+3. **使用限制与注意事项**：
+   - **不支持纯血鸿蒙直装（HarmonyOS NEXT / 5.0+）**：HarmonyOS NEXT 已移除 AOSP 安卓运行时，只认 `.hap` 原生应用；所有 `.apk` 均无法直接安装（纯血鸿蒙设备需借助卓易通等安卓兼容容器运行，或使用 Web PWA 版）。
+   - **与官方「酷我音乐」App 互斥**：由于鸿蒙版占用了 `cn.kuwo.player` 包名来通过系统白名单，同一台设备上不能与官方酷我音乐共存；若机内已装有酷我音乐，需先卸载酷我音乐才能安装本鸿蒙版。
 
 ---
 
@@ -55,12 +70,12 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 
 ---
 
-### 📱 2. Android 移动端
+### 📱 2. Android 移动端（含鸿蒙白名单特供版）
 - **长效后台保活（Foreground Service）**：结合系统媒体通知服务与原生唤醒锁，彻底摆脱切后台即杀与息屏断音。
-- **系统媒体中心卡片**：完全接管系统下拉通知栏与锁屏媒体控制器，支持锁屏大封面展示、上一曲/下一曲、拖拽进度条及快捷收藏。
+- **系统媒体中心卡片**：完全接管系统下拉通知栏与锁屏媒体控制器，支持锁屏大封面展示、上一曲/下一曲、拖拽进度条及快捷收藏；**鸿蒙白名单版**额外打通华为 HarmonyOS 4.x / EMUI 下拉控制中心顶层音频播控大卡片。
 - **系统级桌面歌词悬浮窗**：画中画级别全局悬浮窗，在运行其他应用（微信、游戏、浏览器）时随时悬浮展示实时歌词。
 - **全屏全沉浸视口**：状态栏与手势虚拟按键全透明沉浸，智能计算异形屏与挖孔屏避让安全区。
-- **应用内版本检查**：在「设置 › 关于」中一键检测最新 APK，支持直连极速镜像覆盖更新。
+- **应用内版本检查**：在「设置 › 关于」中一键检测最新 APK，自动识别标准版与鸿蒙白名单版通道，支持直连极速镜像覆盖更新。
 
 <div align="center">
   <img src="assets/android-preview.jpg" width="42%" alt="Lite Music Android 移动端界面与底部沉浸导航" />
