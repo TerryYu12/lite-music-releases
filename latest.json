@@ -1,8 +1,8 @@
 {
-  "version": "5.19.1",
-  "publishedAt": "2026-11-12T13:02:15.712Z",
-  "notes": "### 🐛 Bug 修复\n\n- 纯歌词（普通 LRC）平滑擦色修复：解决开启逐字卡拉OK后无 YRC 数据的普通 LRC 歌词进度卡死在 0% 无法平滑擦色的问题，120 FPS 渲染引擎全面接管普通 LRC 进度驱动\n- Android / 鸿蒙平板模式横屏全屏支持：补充 `android:resizeableActivity=\"true\"`、`<supports-screens>` 与 wide-aspect 屏显配置，彻底消除华为 MatePad 等平板横屏启动黑边/平行视界问题，并在平板顶栏与全屏歌词页新增全屏切换支持",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.19.1",
+  "version": "5.20.0",
+  "publishedAt": "2026-11-13T03:42:09.675Z",
+  "notes": "### ✨ 新功能\n\n- 播放器与歌曲菜单「切换音源」：在歌曲三点菜单（排除本地与视频）、桌面端全屏歌词页控制栏、移动端全屏播放页右上角工具栏与播放设置抽屉中全面新增「切换音源」入口，支持为任意歌曲或当前播放曲目按落雪自定义源脚本、自定义 API、GD 音乐台与桌面解灰音源精确定向切换，并支持一键恢复自动匹配\n- 第三方音源（落雪 / 自定义 API / GD 音乐台）全链路跨端解析与回退打通：重构外部平台歌曲（QQ / 酷狗 / 酷我）第三方解析映射，支持各平台原生 key 自动对齐与网易云双向严格匹配保底回退；GD 音乐台全面接入移动端 CapacitorHttp 跨端请求；深度联动「启用音乐解析」设置开关\n\n### 🐛 Bug 修复\n\n- 音源设置与弹窗主题色及深色模式对齐：移除音源设置中写死的高亮色彩，全面对齐应用主题色；重构 Naive UI 离散弹窗与提示为主题动态响应实例，彻底解决深色模式下回退确认弹窗白底刺眼与移动端错误通知浅灰失真问题\n- 移动端弹窗与底栏层级遮挡修复：将 ResponsiveModal 模态层与全屏回退弹窗层级提升至十万级，并适配底部安全区，彻底消除移动端播放条遮挡确认与取消按键的问题\n\n### 🐛 Bug 修复\n\n- 纯歌词（普通 LRC）平滑擦色修复：解决开启逐字卡拉OK后无 YRC 数据的普通 LRC 歌词进度卡死在 0% 无法平滑擦色的问题，120 FPS 渲染引擎全面接管普通 LRC 进度驱动\n- Android / 鸿蒙平板模式横屏全屏支持：补充 `android:resizeableActivity=\"true\"`、`<supports-screens>` 与 wide-aspect 屏显配置，彻底消除华为 MatePad 等平板横屏启动黑边/平行视界问题，并在平板顶栏与全屏歌词页新增全屏切换支持",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.20.0",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,35 +12,37 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.19.1.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/LiteMusic-Setup-5.19.1.exe",
-    "size": 132826614,
-    "sha256": "0d21c1ef683188f0e70ef856678ec4a7d31a3a75cfad8152269ee3ba7dc89f9b"
+    "name": "LiteMusic-Setup-5.20.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.0/LiteMusic-Setup-5.20.0.exe",
+    "size": 140550584,
+    "sha256": "42e72e0da92d037e68f162e0860487fac6fe4a77c85e8351d5db44e73ffcb899"
   },
   "android": {
-    "name": "LiteMusic-5.19.1.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/LiteMusic-5.19.1.apk",
-    "size": 7502694,
-    "sha256": "02784b8f7ab4b998fdd80b64458df25c45688de340b646aaab49c1b43673ce75",
-    "versionCode": 5019001
+    "name": "LiteMusic-5.20.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.0/LiteMusic-5.20.0.apk",
+    "size": 7506130,
+    "sha256": "8cff2a847ac75548a5441abe19faf2e8084abab67d2135f4745be7d36e8aa241",
+    "versionCode": 5020000
   },
   "androidHarmony": {
-    "name": "LiteMusic-5.19.1-harmony.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/LiteMusic-5.19.1-harmony.apk",
-    "size": 7502710,
-    "sha256": "079b13aa04c18a22ce7a4f6484536307aad974cff6bcac6fb3c81fef4e04fc19",
-    "versionCode": 5019001
+    "name": "LiteMusic-5.20.0-harmony.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.0/LiteMusic-5.20.0-harmony.apk",
+    "size": 7506146,
+    "sha256": "c85c58ab7fc14e299ff4c44a97b9760cd40ef4c62299754e44df785b210e4fb4",
+    "versionCode": 5020000
   },
   "androidKazami": {
     "name": "Kazami-6.1.3.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/Kazami-6.1.3.apk",
+    "version": "6.1.3",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.0/Kazami-6.1.3.apk",
     "size": 17920351,
-    "sha256": "ccf286782267e0b34f894ffd17fbf4c30c91dc4c6f1604b67fddcd012eee2bd5"
+    "sha256": "ccf286782267e0b34f894ffd17fbf4c30c91dc4c6f1604b67fddcd012eee2bd5",
+    "versionCode": 6001003
   },
   "web": {
-    "name": "lite-music-web-5.19.1.zip",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.19.1/lite-music-web-5.19.1.zip",
-    "size": 3784956,
-    "sha256": "a3d4d71a4dba4b53e07f6b5492d546c34be8f6fb325a6eebf7954f474ccb7be3"
+    "name": "lite-music-web-5.20.0.zip",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.0/lite-music-web-5.20.0.zip",
+    "size": 3788389,
+    "sha256": "896702454c1dec8039db29ae6530c29518f40efa3f87f129b7fdad4c771511e3"
   }
 }
