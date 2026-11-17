@@ -2,7 +2,7 @@
 
 # 🎵 Lite Music · 轻聆 / 🌸 风见 Kazami
 
-### 网易云音乐第三方客户端 · 极简轻快 / 日语歌词三层逐字对齐 · 电脑 / 手机 / 平板 / Web
+### 网易云音乐第三方客户端 · 极简轻快 / 网易云音乐云盘 / 日语歌词三层逐字对齐 · 电脑 / 手机 / 平板 / Web
 
 [![Release](https://img.shields.io/github/v/release/TerryYu12/lite-music-releases?label=Lite%20Music&color=60a5fa&style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/latest)
 [![Kazami](https://img.shields.io/badge/%E9%A3%8E%E8%A7%81%20Kazami-6.1.3-f472b6?style=for-the-badge)](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.3)
