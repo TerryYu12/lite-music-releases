@@ -24,17 +24,17 @@
 
 | 版本 | 平台 | 适合谁 / 特性亮点 | 下载入口 |
 | :--- | :--- | :--- | :--- |
-| 💻 **Lite Music** | Windows x64 | 电脑端：桌面悬浮歌词、声屿灵动控制、Mini 迷你模式、全局快捷键、无损播放 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
-| 📱 **Lite Music（标准版）** | Android | 通用推荐（小米 / OPPO / vivo / 三星 / 原生安卓等手机与平板）：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词 | [⬇️ 最新标准包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
-| 🌺 **Lite Music（鸿蒙版）** | HarmonyOS 4.x / EMUI | 华为手机与华为平板专供：突破鸿蒙播控中心白名单限制，支持下拉控制中心与锁屏大卡片常驻及双向切歌联动 | [⬇️ 最新鸿蒙包 (-harmony.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 适用说明](#-鸿蒙白名单版适用说明什么时候用它) |
+| 💻 **Lite Music** | Windows x64 | 电脑端满血版：桌面悬浮歌词、声屿灵动控制、Mini 迷你模式、全局快捷键、无损播放 | [⬇️ 最新安装包 (.exe)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
+| 📱 **Lite Music（标准版）** | Android/平板模式 | 安卓端通用极速版，功能最完善：状态栏/手势条全沉浸、后台长效保活、系统媒体中心接管、悬浮歌词，更简洁更流畅更强 | [⬇️ 最新标准包 (.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) |
+| 🌺 **Lite Music（鸿蒙版）** | HarmonyOS 4.x / EMUI/平板模式 | 华为手机与华为平板专供：功能和标准版一致，突破鸿蒙播控中心白名单限制，支持下拉控制中心与锁屏大卡片常驻及双向切歌联动 | [⬇️ 最新鸿蒙包 (-harmony.apk)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 适用说明](#-鸿蒙白名单版适用说明什么时候用它) |
 | 🍎 **Lite Music** | iPad / Web (PWA) | 免安装：下载免编译绿色包解压即跑、大屏横屏双栏排版、Safari 添加至主屏幕独立全屏 | [⬇️ 最新 Web 绿色包 (.zip)](https://github.com/TerryYu12/lite-music-releases/releases/latest) · [📖 部署说明](#-ipad--web-pwa-使用说明) |
-| 🌻 **风见 Kazami** | Android（手机 / 平板） | 常听日语歌、喜欢好看的幽香主题与三层逐字歌词页；网易云 / QQ 音乐 / 酷狗账号同步 | [⬇️ Kazami-6.1.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.3/Kazami-6.1.3.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.3) |
+| 🌻 **风见 Kazami** | Android（手机 / 平板） | 日语主题特供：常听日语歌、喜欢好看的幽香主题与三层逐字歌词页；网易云 / QQ 音乐 / 酷狗账号同步 | [⬇️ Kazami-6.1.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.3/Kazami-6.1.3.apk) · [更新说明](https://github.com/TerryYu12/lite-music-releases/releases/tag/kazami-v6.1.3) |
 
 - **设备兼容**：Android 7.0 及以上可用，手机和平板通用。
 - **安装包文件名区分**：
   - **`LiteMusic-版本号.apk`**：Lite Music 安卓**标准版**（绝大多数安卓设备装这个）。
   - **`LiteMusic-版本号-harmony.apk`**：Lite Music **鸿蒙白名单特供版**（华为手机 / 华为平板装这个）。
-  - **`Kazami-版本号.apk`**：**风见 Kazami** 主题分支版。
+  - **`Kazami-版本号.apk`**：**风见 Kazami** 日语主题分支版。
 - **签名与共存说明**：风见和 Lite Music 签名不同；标准版与鸿蒙版包名不同。从标准版、鸿蒙版、风见版之间互相切换时，建议先卸载旧版本（本地设置和播放记录会清空，网易云等平台账号里的歌单不受影响）。
 - **更新覆盖**：已安装任意版本的用户，下载同分支新安装包直接覆盖安装即可保留数据；应用内「设置 › 关于」检查更新会**自动按当前安装的分支（标准版 / 鸿蒙版 / 风见版）匹配对应通道**，不会交叉误推。
 - **国内加速**：若下载较慢，可复制下载链接，前面加上 `https://ghproxy.cn/`（或 `https://ghproxy.net/`）再打开。
@@ -58,6 +58,7 @@
 Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提供深度原生与平台级特性支持：
 
 ### 💻 1. Windows 桌面端
+- **多音源支持**：网易云、QQ音乐、酷狗、酷我、自定义导入第三方音源。
 - **桌面全局悬浮歌词**：支持置顶、锁定、鼠标穿透、单双行轮播切换与卡拉 OK 逐字变色，办公码字时不遮挡视野。
 - **声屿（Island）灵动岛**：停靠于屏幕顶部的胶囊控制浮窗，悬停展开歌曲封面、当前曲目、播放进度与切歌控制。
 - **Mini 迷你模式**：独立紧凑小窗停靠在屏幕边缘，不占桌面宝贵空间。
@@ -71,6 +72,7 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 ---
 
 ### 📱 2. Android 移动端（含鸿蒙白名单特供版）
+- **多音源支持**：网易云、QQ音乐、酷狗、酷我、自定义导入第三方音源。
 - **长效后台保活（Foreground Service）**：结合系统媒体通知服务与原生唤醒锁，彻底摆脱切后台即杀与息屏断音。
 - **系统媒体中心卡片**：完全接管系统下拉通知栏与锁屏媒体控制器，支持锁屏大封面展示、上一曲/下一曲、拖拽进度条及快捷收藏；**鸿蒙白名单版**额外打通华为 HarmonyOS 4.x / EMUI 下拉控制中心顶层音频播控大卡片。
 - **系统级桌面歌词悬浮窗**：画中画级别全局悬浮窗，在运行其他应用（微信、游戏、浏览器）时随时悬浮展示实时歌词。
@@ -84,6 +86,7 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 ---
 
 ### 🍎 3. iOS / iPadOS 端（Web PWA）
+- **多音源支持**：网易云、QQ音乐、酷狗、酷我、自定义导入第三方音源。
 - **免证书、免越狱、永不掉签**：基于 Web PWA 标准，通过 iPad / iPhone 自带 Safari 访问同源部署服务，点击“分享 → 添加到主屏幕”立享独立全屏应用体验，彻底告别 7 天免费开发者证书掉签烦恼。
 - **iPadOS 横屏双栏排版**：大屏平板模式下自动激活响应式双栏，左侧大封面控制器、右侧大幅三层逐字歌词，触控与视觉空间充分释放。
 - **安全区（Safe Area）精准避让**：独立全屏模式下毛玻璃底色自然沉底延伸，播放进度与操作按钮自动垫高避让 Home Indicator，上划多任务手势绝不误触播放条。
@@ -95,7 +98,7 @@ Lite Music 采用跨端内核与现代响应式架构，针对各操作系统提
 
 ## 🌸 风见 Kazami 功能一览
 
-风见在 Lite Music 的全部功能之上，重做了视觉、歌词排版和手机 / 平板手感。下面按用途分组列出风见的主要功能。
+风见在 Lite Music 的基础功能之上，重做了视觉、歌词排版和手机 / 平板手感。下面按用途分组列出风见的主要功能。
 
 > 🌻 **最新版 6.1.3 · 6.x 亮点**　[⬇️ 下载 Kazami-6.1.3.apk](https://github.com/TerryYu12/lite-music-releases/releases/download/kazami-v6.1.3/Kazami-6.1.3.apk)
 >
