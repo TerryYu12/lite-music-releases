@@ -1,8 +1,8 @@
 {
-  "version": "5.20.1",
-  "publishedAt": "2026-11-14T17:11:46.121Z",
-  "notes": "### 🐛 Bug 修复\n\n- 落雪音源跨平台补救：外部曲目（如未登录 QQ 时的 QQ 歌曲）在本平台取不到时，自动到脚本支持的酷我 / 酷狗 / QQ 搜索同一首歌（歌名完全一致、歌手与时长严格校验，排除演唱会串烧等错版）再交给脚本取链，解决「切换音源」与自动保底在脚本不支持本平台时全部失败的问题\n- 移动端自动保底默认启用已导入音源：安卓端未勾选任何双端音源时，已激活的落雪脚本与已配置的自定义 API 自动参与 VIP / 受限歌曲保底，不再因默认仅勾选桌面端解灰音源而一个第三方源都不尝试\n- 酷我搜索结果缺失第一页：修正酷我搜索分页从 0 开始的偏移，搜索与跨平台匹配不再整页跳过排名最前的原唱\n- GD 音乐台自动保底修复：自动保底改为传入数字码率（此前传入音质名导致接口 422 必然失败），移除已下线的 tidal 源，并对 joox 曲目 id 做 URL 编码\n- 「切换音源」弹窗分组标题显示原始文案 key 的问题，补齐 5 种语言的分组名称",
-  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v5.20.1",
+  "version": "6.0.0",
+  "publishedAt": "2026-11-18T15:42:35.284Z",
+  "notes": "### ✨ 新功能\n\n- 全新 Lite 6 创意启动界面（黑胶星环）：采用独立 GPU 合成层实现黑胶纯自转、唱臂落针与频谱律动动画，原生支持 60Hz / 120Hz+ 高刷新率屏幕，并分离日间（`#FDFDFD`）/ 深色（`#000000`）双套启动图标与冷启动底色，消除闪烁与掉帧\n- 全新 M1 极简应用图标：重构为珊瑚红渐变一笔音符 `L` 极简几何标，全量更新桌面端、PWA、应用内 `LiteLogo` 与 Android 日间/夜间双版自适应图标\n- 账号设置页优化：将 QQ 音乐与酷狗音乐拆分为独立分组卡片，结构更清晰\n\n### 🐛 Bug 修复\n\n- 优化资料卡与胶囊样式并完善平板布局适配\n- 解锁 Android 端窗口最高支持刷新率（`preferredDisplayModeId`），并使原生冷启动页无缝衔接 WebView 首帧",
+  "releasePage": "https://github.com/TerryYu12/lite-music-releases/releases/tag/v6.0.0",
   "mirrors": [
     "https://ghproxy.cn/",
     "https://ghproxy.net/",
@@ -12,37 +12,37 @@
     "https://github.moeyy.xyz/"
   ],
   "windows": {
-    "name": "LiteMusic-Setup-5.20.1.exe",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.1/LiteMusic-Setup-5.20.1.exe",
-    "size": 120915722,
-    "sha256": "29f1c124b00fb353a7d082e9891776ec7a98581e8a19f35a8615d63f7798401e"
+    "name": "LiteMusic-Setup-6.0.0.exe",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v6.0.0/LiteMusic-Setup-6.0.0.exe",
+    "size": 137086912,
+    "sha256": "d709383cb00e5b37fbb4027c1c8b3c9df20b936bb2f800c8960dcb59e8ddd258"
   },
   "android": {
-    "name": "LiteMusic-5.20.1.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.1/LiteMusic-5.20.1.apk",
-    "size": 7512175,
-    "sha256": "08eb08b7f104f0f177707aa9029b9805470842ca3a6a6b7caac36243b1eb12b9",
-    "versionCode": 5020001
+    "name": "LiteMusic-6.0.0.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v6.0.0/LiteMusic-6.0.0.apk",
+    "size": 6686794,
+    "sha256": "8e45a19c5549c7e022a69df961c505bcacc708f9c16639ae0680e4f4a7acd489",
+    "versionCode": 6000000
   },
   "androidHarmony": {
-    "name": "LiteMusic-5.20.1-harmony.apk",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.1/LiteMusic-5.20.1-harmony.apk",
-    "size": 7512191,
-    "sha256": "2c6476d4fd853b4e7c2294e8eb1d03acba1a57425373a8d35aa6e97432273db7",
-    "versionCode": 5020001
+    "name": "LiteMusic-6.0.0-harmony.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v6.0.0/LiteMusic-6.0.0-harmony.apk",
+    "size": 6686810,
+    "sha256": "47cbaad001ff6f30cb1c959f28b4e7fc55c3be0c1e40c39697499b9b1a2adfee",
+    "versionCode": 6000000
   },
   "androidKazami": {
     "name": "Kazami-6.1.3.apk",
     "version": "6.1.3",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.1/Kazami-6.1.3.apk",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v6.0.0/Kazami-6.1.3.apk",
     "size": 17920351,
     "sha256": "ccf286782267e0b34f894ffd17fbf4c30c91dc4c6f1604b67fddcd012eee2bd5",
     "versionCode": 6001003
   },
   "web": {
-    "name": "lite-music-web-5.20.1.zip",
-    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v5.20.1/lite-music-web-5.20.1.zip",
-    "size": 3793649,
-    "sha256": "85e55e0a10b2c878db5d222d4876ee3ab81d27b169d35d10b4640d26b959efc9"
+    "name": "lite-music-web-6.0.0.zip",
+    "url": "https://github.com/TerryYu12/lite-music-releases/releases/download/v6.0.0/lite-music-web-6.0.0.zip",
+    "size": 3060387,
+    "sha256": "4b93f324251d1a817e60d8ed905228b2ee677af55df38da38bffe7d4e1b8121e"
   }
 }
